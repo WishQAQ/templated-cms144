@@ -1,0 +1,51 @@
+.mood_user{
+height:36px; 
+line-height:32px;
+width:850px;_width:850px;
+float:left;
+margin-left:110px;_margin-left:110px;
+margin-top:-125px;_margin-top:-125px;
+border-bottom:1px dashed #ddd;
+}
+.mood_user em {font-size: 22px; font-style:normal;}
+.mood_user i{ display:inline-block; color:#777; height:14px; line-height:14px; vertical-align:middle;margin-left:10px; font-style:normal}
+.mood_user i b{ color:#ff6600;}
+.mood_user .focus{ background:url(../images/icon_s1.png) 0px 5px no-repeat ; padding:5px 0px 5px 23px; }
+.mood_user .fans{ background:url(../images/icon_heart.png) 0px 5px no-repeat; padding:3px 0px 3px 15px; }
+
+.share {
+ width:400px; height:51px; 
+ background:url(../images/bg_homeInput_house.png) 120px no-repeat;
+ padding-left:120px;_padding-left:120px;
+ margin-top:-65px;_margin-top:-65px;
+ float: left;
+ }
+
+
+#share_textarea {
+ overflow:auto; width:386px; _width:384px; height:37px; padding:3px 6px; border:1px solid #ddc3ae; float:left; font-size:14px; color:#777;}
+
+#btn_submit {
+background:url(../images/bg_btn_23Horange.png) 0px 0px repeat-x; width:74px; height:25px; text-align:center; display:inline-block; line-height:25px; color:#fff;  font-size:14px; float:right}
+
+.notification1 {
+	BORDER-BOTTOM: 1px solid; POSITION: relative; BORDER-LEFT: 1px solid; PADDING-BOTTOM: 0px; MARGIN: -5px 0px 0px; WIDTH: 40.8%; float:right; BACKGROUND-REPEAT: no-repeat !important; BACKGROUND-POSITION: 10px 11px; FONT-SIZE: 13px; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid; PADDING-TOP: 0px;color: #000;
+	font-weight:bold;
+	margin-top:-82px;_margin-top:-82px;
+	float: right;
+}
+.information1 {
+	BORDER-BOTTOM-COLOR: #a2b4ee; BORDER-TOP-COLOR: #a2b4ee; BACKGROUND: url(../images/information.png) #F5FFFA; COLOR: #585b66; BORDER-RIGHT-COLOR: #a2b4ee; BORDER-LEFT-COLOR: #a2b4ee;line-height:95px;height:95px;
+}
+.uline {
+    text-decoration: underline;
+}
+.blue {
+    color: #29A5C9;
+}
+.tc {
+    font-size:12px;
+}
+.lh22 {
+    line-height: 22px;
+}

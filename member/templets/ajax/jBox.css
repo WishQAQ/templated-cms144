@@ -1,0 +1,48 @@
+.jBox
+{
+	position: absolute;
+	border: 1px solid #6B97C1;
+	visibility: hidden;
+	background-color: white;
+	text-align:left;
+}
+
+.jBoxHandler
+{
+	cursor: move;
+	font: bold 14px Arial;
+	line-height:25px;
+	color: white;
+	overflow: hidden;
+	text-indent:5px;
+	background:#8BACCF url(pupop_bg.png) repeat-x scroll 0 0;
+	height:28px;
+}
+
+#btn_close
+{
+	background:transparent url(pupop_bg.png) no-repeat scroll 0 -30px;
+	height:19px;
+	line-height:100px;
+	margin-right:5px;
+	position:absolute;
+	width:34px;
+	right:3px;
+	top:0;
+	border:0;
+}
+#btn_close:hover
+{
+	background:transparent url(pupop_bg.png) no-repeat scroll -37px -30px;
+	cursor:pointer;
+}
+.jBoxContent
+{
+	background-color: #fff;
+	color: #000;
+	padding: 5px 10px;
+	overflow: auto;
+	font-size:13px;
+	border:0;
+}
+

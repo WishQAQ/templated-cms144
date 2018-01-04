@@ -1,0 +1,319 @@
+/**************************************
+          首页样式部分(CaicaiStyle)
+           Update:09-11-19
+      Author:      From:DesDev INC.
+**************************************/
+@import url("base.css");
+input {
+	margin:0;
+	padding:0;
+}
+.clr{
+	clear:both;
+	}
+.f_r{
+	float:right;
+	}
+.755 {
+	width: 755px;
+	float: right;
+}
+.main-wrap { background:#FFFFFF;width: 540px;
+	float: left;
+	padding:0 20px;
+}
+.imgLink {
+    border: 1px solid #E0E0E0;
+    height: 106px;
+    width: 106px;background-color:#fdfffe;
+}
+.imgLink img{  margin:2px;  border:1px solid #EEEEEE; vertical-align:top;}
+	.imgLink:hover{ text-decoration:none;}
+	.imgLink:hover img{ border:1px solid #ff6600;}
+.sns-avatar {
+	height:155px;
+	overflow:visible;
+	z-index:10;
+	min-height:155px;
+	margin: 10px 0 10px 10px;
+	position:relative;
+}
+.sns-avatar .headPic {
+	float:left;
+	height:100px;
+	margin-right:10px;
+	width:100px;
+}
+
+.sns-avatar .av-index {
+	line-height:20px;
+	color: #525252;
+	float:right
+}
+.mood{ padding:0px 10px;}
+.mood_user em {font-size: 22px; font-style:normal}
+.mood_user{height:36px; line-height:32px; margin:0px 0px 5px 0px; border-bottom:1px dashed #ddd;}
+.mood_user .userName{ font-weight:bold; font-size:14px; display:inline-block;}
+.mood_user i{ display:inline-block; color:#777; height:14px; line-height:11px; vertical-align:middle; padding:5px 0px 5px 15px; margin-left:10px; font-style:normal}
+.mood_user i b{ color:#ff6600;}
+.mood_user .focus{ background:url(../images/icon_add.png) 0px 5px no-repeat;}
+.mood_user .fans{ background:url(../images/icon_heart.png) 0px 5px no-repeat;}
+.av-index ul .other {
+	color: #999;
+}
+.sns-avatar-m li .name{ overflow:hidden; white-space:nowrap; width:48px; float: left;}
+.msg {
+	width: 430px;
+	margin-top: 8px;
+	height: 30px;
+	line-height: 27px;
+	overflow: hidden;
+}
+.msg p {
+	border:1px solid #ffcfa4;
+	background: #fffef1;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.msg p em a {
+	color: #999;
+}
+.share {
+ width:400px; height:51px; background:url(../images/bg_homeInput_house.png) no-repeat; padding:6px 5px 0px;float: left;}
+
+
+#share_textarea {
+ overflow:auto; width:386px; _width:384px; height:37px; padding:3px 6px; border:1px solid #ddc3ae; float:left; font-size:14px; color:#777;}
+	
+#form1 {
+	height: 25px;
+}
+#btn_submit {
+background:url(../images/bg_btn_23Horange.png) 0px 0px repeat-x; width:74px; height:23px; text-align:center; display:inline-block; line-height:23px; color:#fff;  font-size:14px; float:right}
+
+.indexTab {
+	height: 26px;
+	margin-top: 14px;
+	margin-left:10px;
+}
+.indexTab ul li {
+	background: #FFF;
+	margin-left:4px;
+	float: left;
+	font-size: 12px;
+	font-weight: bolder;
+	margin-bottom:-1px;
+	position:relative;
+	z-index:10;
+	border: 1px solid #dedede;	
+}
+.indexTab ul li a{
+	color:#313131;
+	outline:none;
+	blr:expression(this.onFocus=this.blur());
+	}
+.indexTab ul .thisTab {
+	border-bottom:none;
+	height: 26px;
+}
+.indexTab ul .thisTab a {
+	color:#5f9304;
+}
+.indexTab ul .thisTab a:hover {
+	text-decoration:none;
+}
+.indexTab ul li a {
+	line-height: 25px;
+	height: 25px;
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#sns-feeds .sns-box {
+	background: #FFF;
+	border: 1px solid #ddd;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+#sns-feeds .sns-box .newarticlelist{
+	padding-top:10px;
+	}
+#sns-feeds .sns-box .newarticlelist ul li{
+	line-height:28px;
+	background:url(../images/lineDot.gif) left bottom repeat-x;
+	}
+#sns-feeds .sns-box .newarticlelist ul li a{
+	color: #2ca9cc;
+	}
+#sns-feeds .sns-box .newarticlelist ul li span{
+	float:right;
+	margin-left:5px;
+	}
+#sns-feeds {
+	color: #525252;
+}
+.feeds_title {
+	line-height: 20px;	
+	padding-left: 24px;
+	margin-top: 12px;
+}
+.feeds_title span .act{
+	visibility:hidden;
+	position:absolute;
+	float:right;
+	right:0px;
+	*right:0px;
+	_right:10px;	
+	z-index: 999;
+	}
+.feeds_title span:hover .act,.feeds_title span.hover .act,.feeds_title span.hover .act:visited {
+	visibility:visible;
+}
+.icostow{
+	background: url(../images/icon2.png) no-repeat left 3px;
+}
+.icoaddfriends{
+	background: url(../images/icon5.png) no-repeat left 3px;
+}
+.icofeedback{
+	background: url(../images/icon4.gif) no-repeat left 3px;
+}
+.icoaddsoft{
+	background: url(../images/icon1.gif) no-repeat left 3px;
+}
+.icoadd{
+	background: url(../images/icon1.gif) no-repeat left 3px;
+}
+.feeds_title span {
+	display: block;
+	position: relative;
+}
+.feeds_title span a {
+	color: #2ca9cc;
+}
+.feeds_title.icostow span em,.feeds_title.icoaddfriends span em,.feeds_title.icofeedback span em,.feeds_title.icoaddsoft span em,.feeds_title.icoadd span em{
+	color: #999;
+}
+.feeds_title1 {
+	line-height: 20px;
+	margin-top: 12px;
+}
+.feeds_title1 img{
+	vertical-align:middle;
+	}
+.feeds_title1 span .act{
+	visibility:hidden;
+	position:absolute;
+	float:right;
+	right:0px;
+	*right:0px;
+	_right:10px;	
+	z-index: 999;
+	}
+.feeds_title1 span:hover .act,.feeds_title1 span.hover .act,.feeds_title1 span.hover .act:visited {
+	visibility:visible;
+}
+.feeds_title1 span {
+	display: block;
+	position: relative;
+}
+.feeds_title1 span a {
+	color: #2ca9cc;
+}
+.feeds_title1 span em{
+	color:#999;
+	}
+
+/*
+right
+*/
+.col-extra {
+	width:195px;
+	float: right;
+	color: #525252;
+	margin-right:0!important;;
+	margin-right:-5px;
+}
+
+.sns-box .hd {
+	    border-bottom: 1px solid #EBCEB5;
+    height: 25px;
+}
+.hd h3 {
+	line-height: 27px;
+	font-size: 12px;
+	color:#333333;
+}
+.sns-box{ margin-left:5px;}
+.sns-info{}
+.sns-info li{ height:24px; line-height:24px;}
+.sns-avatar-m {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	overflow:hidden;
+}
+.sns-avatar-m ul{
+	
+	}
+.sns-avatar-m li {
+	float:left;
+	margin-right:10px;
+	padding: 0px;
+	width: 48px;
+	text-align: center;
+}
+.sns-avatar-m ul .pic a img {
+	margin-bottom: 6px;
+}
+#mt10 {
+	margin: 5px 0px 0px;
+	width: 100%;
+}
+.sns-avatar-m .pic a {
+	color:#2ca9cc;
+}
+.bd{
+	height: 55px;
+	width: 175px;
+	background: #e0dfe1;
+	padding-top: 11px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.text1{
+	width: 132px;
+	height:23px;
+	line-height:23px;
+	background:#FFF;
+	border:1px solid #DDDDDD;
+	float:left;
+	color:#525252;
+	font-size: 12px;
+	
+}
+.button1 {
+	background: #76b63a;
+	height: 23px;
+	width: 38px;
+	border-style: none;
+	float: left;
+	color: #FFF;
+	line-height: 23px;
+}
+.faceBox {
+	padding: 8px;
+	width: 250px;
+	border: 1px solid #CCC;
+	background: #FFF;
+	z-index: 100000;
+	}
+.faceBox ul li {
+	float: left;
+	width: 25px;
+	height: 25px; 
+	overflow: hidden;
+	}
+
+

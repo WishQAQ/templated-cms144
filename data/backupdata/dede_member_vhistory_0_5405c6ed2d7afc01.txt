@@ -1,0 +1,1 @@
+INSERT INTO `dede_member_vhistory` VALUES('1','10','ÖÜ²®Í¨','2','xutao','2','127.0.0.1','1425819905');

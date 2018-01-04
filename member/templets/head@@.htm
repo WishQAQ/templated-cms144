@@ -1,0 +1,172 @@
+<LINK rel=stylesheet type=text/css href="templets/images/style.css" media=screen><!--[if lte IE 7]>
+<STYLE type=text/css>#sidebar #main-nav UL LI A {
+	_padding: 10px 15px; _display: block; _margin-bottom: -11px
+}
+.content-box-header {
+	MARGIN-TOP: 0px
+}
+UL.content-box-tabs {
+	_position: relative; _top: 2px
+}
+.action-button:hover {
+	CURSOR: pointer
+}
+.input-notification {
+	POSITION: relative; TOP: -5px; _background-position: left 6px
+}
+#login-wrapper #login-content INPUT {
+	MARGIN: 0px
+}
+</STYLE>
+<![endif]-->
+<STYLE type=text/css>#<?php echo $cfg_webname; ?>-main-content {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 30px 0px 260px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 10px
+}
+FORM LABEL.error {
+	PADDING-BOTTOM: 2px; BACKGROUND-COLOR: transparent; MARGIN: 0px 0px 0px 5px; PADDING-LEFT: 22px; PADDING-RIGHT: 0px; DISPLAY: inline; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left 2px; PADDING-TOP: 2px
+}
+.select {
+	WIDTH: 600px
+}
+.digest {
+	HEIGHT: 100px
+}
+.<?php echo $cfg_webname; ?>red {
+	COLOR: #d40000
+}
+.<?php echo $cfg_webname; ?>form {
+	CLEAR: both
+}
+.tips {
+	COLOR: #d40000; FONT-SIZE: 12px
+}
+#<?php echo $cfg_webname; ?>thumb {
+	FLOAT: left
+}
+#<?php echo $cfg_webname; ?>thumb UL {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+#<?php echo $cfg_webname; ?>thumb .preview {
+	WIDTH: 146px; HEIGHT: 100px
+}
+#<?php echo $cfg_webname; ?>-thumb .preview {
+	WIDTH: 146px; HEIGHT: 100px
+}
+#<?php echo $cfg_webname; ?>thumb UL LI {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: left; CURSOR: pointer; PADDING-TOP: 0px
+}
+#<?php echo $cfg_webname; ?>-thumb {
+	DISPLAY: none; HEIGHT: 140px; OVERFLOW: scroll
+}
+#<?php echo $cfg_webname; ?>-thumb LI {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: left; CURSOR: pointer; PADDING-TOP: 5px
+}
+.thumb {
+	WIDTH: 120px; HEIGHT: 81px; CURSOR: pointer
+}
+.avatar {
+	PADDING-LEFT: 0px; FLOAT: left
+}
+.sjump {
+	TEXT-ALIGN: center; WIDTH: 5%
+}
+.pagination B {
+	BORDER-BOTTOM-COLOR: #459300 !important; PADDING-BOTTOM: 3px; BORDER-TOP-COLOR: #459300 !important; MARGIN: 0px 5px 0px 0px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; BACKGROUND: #469400; COLOR: white !important; BORDER-RIGHT-COLOR: #459300 !important; BORDER-LEFT-COLOR: #459300 !important; PADDING-TOP: 3px
+}
+#tooltip {
+	Z-INDEX: 3000; POSITION: absolute; BORDER-BOTTOM-STYLE: none; PADDING-BOTTOM: 10px; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP-STYLE: none; BACKGROUND: #222; BORDER-LEFT-STYLE: none; PADDING-TOP: 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px
+}
+#tooltip H3 {
+	MARGIN: 0px
+}
+#tooltip DIV {
+	MARGIN: 0px
+}
+</STYLE>
+<link href="templets/style/base.css" rel="stylesheet" type="text/css" />
+<DIV id=body-wrapper>
+<DIV id=sidebar>
+<DIV id=sidebar-wrapper><A href=""><IMG 
+id=logo alt="<?php echo $cfg_webname; ?>" src="templets/images/logo.gif"></A>
+<DIV id=profile-links>
+<A title="进入空间" href="<?php echo $cfg_cmsurl;?>/member/index.php?uid=<?php echo $cfg_ml->M_LoginID; ?>" target=_blank style="color:#87CEFA; FONT-WEIGHT: 700;font-size:12px;"><?php echo $cfg_ml->M_UserName?></A>
+<script type="text/javascript">
+ var now=(new Date()).getHours();
+ if(now>0&&now<=6){
+document.write("午夜好");
+ }else if(now>6&&now<=11){
+ document.write("早上好");
+ }else if(now>11&&now<=14){
+ document.write("中午好");
+ }else if(now>14&&now<=18){
+ document.write("下午好");
+ }else{
+ document.write("晚上好");
+ }
+</script><BR>
+<BR>
+<A title="管理首页" href="../member/">管理首页</A>
+<A title="退出" href="../member/index_do.php?fmdo=login&dopost=exit#">注销登录</A></DIV>
+<UL id=main-nav>
+ <LI><A class=nav-top-item>我的文章</A></LI>
+  <UL>
+    <LI><A href="../member/fx_cy.php">在线投稿</A></LI>
+<LI><A href="../member/gl_cy.php?channelid=1">我的投稿</A></LI>
+</UL>
+  <LI><A  id="<?php echo $cfg_webname; ?>-nav" class="nav-top-item no-submenu">信息管理</A>
+    <UL>
+    <LI><A href="friend.php">我的好友</A>
+    <LI><A 
+    href="pm.php">消息管理</A></LI>
+	    <LI><A 
+    href="book.php">留言板</A>
+	
+</UL>
+ 
+  <LI><A class=nav-top-item>个人设置</A></LI>
+  <UL>
+    <LI><A  href="grsz.php">基本设置</A></LI>
+   
+	   <LI><A  href="tx.php ">头像设置</A></LI>
+		   <LI><A  href="kjsz.php">空间设置</A></LI>
+	</UL>
+  <LI><A class=nav-top-item>意见与建议</A></LI>
+  <UL>
+    <LI>
+	<A href="http://www.ies5.com/about/book.html" target="_blank">提交建议</A>
+  </LI>
+  </UL></LI></UL></DIV></DIV>
+  
+  
+  
+<DIV id=main-content>
+<UL class=shortcut-buttons-set>
+  <LI>
+  <A class=shortcut-button href="/member/fx_cy.php">
+  <SPAN><IMG alt="分享创意" src="templets/images/ims-upload.png"><BR>分享创意</SPAN>
+  </A>
+  </LI>
+
+  <LI><A class=shortcut-button href="/member/grsz.php">
+  <SPAN><IMG alt="个人设置" src="templets/images/ims-return.png"><BR>个人设置</SPAN>
+  </A>
+  </LI>
+
+  <LI><A class=shortcut-button href="../member/kjsz.php">
+  <SPAN><IMG alt="空间设置" src="templets/images/ims-checked.png"><BR>空间设置</SPAN>
+  </A>
+  </LI>
+
+  <LI><A class=shortcut-button  href="/member/pm.php"><SPAN>
+  <IMG alt="我的消息" src="templets/images/ims-pm.png"><BR>我的消息</SPAN>
+  </A>
+  </LI>
+
+   
+	<LI><A class=shortcut-button href="/">
+	<SPAN><IMG alt=主页 src="templets/images/ims-home.png"><BR>网站首页</SPAN>
+	</A>
+	</LI>
+
+  </UL>
+<DIV class=clear></DIV>

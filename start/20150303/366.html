@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>穹顶之下：告别“标准件”的新闻作品_dedecms文章资讯博客模板(会员中心+手机版)</title>
+<meta name="keywords" content="投稿,柴静" />
+<meta name="description" content="任何优秀的传播品本质上就两个字：故事（story），而故事的四要素——对抗性角色，代入感很强的情绪，细节和悬念——也将决定着传播力度。" />
+<link rel="stylesheet" type="text/css" media="all" href="/skin/style.css">
+<link rel="stylesheet" type="text/css" media="all" href="/skin/front.min.css">
+<script type="text/javascript" src="/skin/jquery.js"></script>
+<script type="text/javascript" src="/skin/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="/skin/jquery.carouFredSel-6.2.1.js"></script>
+<script type="text/javascript" src="/skin/tie-scripts.js"></script><!--导航下拉-->
+<!--[if lt IE 9]>
+<script src="/skin/html5.js"></script>
+<script src="/skin/selectivizr-min.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie9.css" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie8.css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie7.css" />
+<![endif]-->
+</head>
+<body>
+<div class="wrapper">
+<!-- head开始-->
+<script type="text/javascript">
+    var mobileUrl="/wap.php", 
+        mobile = (/mmp|symbian|smartphone|midp|wap|phone|xoom|iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+    if (mobile) {
+        window.location = mobileUrl;
+    }
+</script>
+
+<script type="text/javascript" src="/skin/jquery1.js"></script>
+<script type="text/javascript" src="/skin/common.js"></script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+
+	$(function(){
+		$("a[_for]").mouseover(function(){
+			$(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+			$(this).addClass("thisclass").blur();
+			$("#"+$(this).attr("_for")).show();
+		});
+		$("a[_for=uc_member]").mouseover();
+		$("a[_for=flink_1]").mouseover();
+	});
+	
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+</script>
+<header>
+<!-- 顶部菜单及搜索-->
+
+<div class="top-nav">
+<div class="midBox">
+<div class="top-menu">
+<ul class="menu">
+
+<li><a href="/about/gywm/" target="_blank" title="">关于我们</a></li> 
+
+<li><a href="/about/xxqbd/" target="_blank" title="">寻求报道</a></li> 
+
+<li><a href="/about/swhz/" target="_blank" title="">商务合作</a></li> 
+
+<li><a href="/about/bqsm/" target="_blank" title="">版权申明</a></li> 
+
+<li><a href="/about/lxwm/" target="_blank" title="">联系我们</a></li> 
+ 
+<li><a href="/tags.php" target="_blank" title="">TAG标签</a></li> 
+
+</ul>
+</div>
+<!-- search-->
+<div class="search-block">
+<form method="get" id="searchform" action="/plus/search.php" target="_blank">
+<input class="search-button" type="submit" value="搜索">
+<input type="text" id="s" name="q" value="搜索..." onFocus="if (this.value == '搜索...') {this.value = '';}" onBlur="if (this.value == '') {this.value = '搜索...';}">
+</form>
+</div>
+</div>
+</div>
+<!-- 顶部菜单及搜索结束-->
+<div class="header-content">
+<div class="midBox">
+<div class="logo" style="margin-top:5px">
+<h1> <a title="模板无忧" href="/"> <img src="/skin/logo12.png" alt="模板无忧"><strong>模板无忧</strong> </a> </h1>
+</div>
+<!-- .logo /-->
+<div class="ads-top">
+<ul>
+<li style="float:left; width:80px; padding-top:20px"> <a href="/" target="_blank" title="新浪微博"> <img src="/skin/sina.png" alt="新浪微博"></a> </li>
+<li style="float:left; width:80px; padding-top:20px"> <a href="/" target="_blank" title="QQ空间"> <img src="/skin/qzone.png" alt="QQ空间"></a> </li>
+<li style="float:left; width:80px; padding-top:20px"> <a href="/" target="_blank" title="在线交谈"> <img src="/skin/qq.png" alt="在线交谈"></a> </li>
+</ul>
+</div>
+<!-- 关注图标结束-->
+<div class="clear"></div>
+</div>
+</div>
+<!-- 导航-->
+<nav id="main-nav" class="fixed-enabled">
+<div class="container">
+<div class="main-menu">
+<ul id="menu-main" class="menu">
+<li class="menu-item  menu-item-type-custom  menu-item-object-custom  current-menu-item  current_page_item  menu-item-home"> <a title="首页" href="/">模板无忧</a></li>
+<li class="menu-item mega-menu menu-item-type-taxonomy mega-menu menu-item-object-category mega-menu menu-item-has-children parent-list"> <a href="/opinion/">商业观点<span class="sub-indicator"></span></a><!-- 顶级栏目 -->
+<div class="mega-menu-block">
+<div class="mega-menu-content"> 
+<!-- 当前栏目带图头条 --> 
+<div class="mega-menu-item "> <a href="/opinion/20150303/359.html" title="三星入局移动支付混战：谷歌苹果三星沃尔玛Paypal谁的胜算更大？"> <img src="/uploads/allimg/c150303/14253ZA63Z-5XZ.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/opinion/20150303/359.html" title="三星入局移动支付混战：谷歌苹果三星沃尔玛Paypal谁的胜算更大？">三星入局移动支付混战：谷歌苹果三星沃尔玛Paypal谁的胜算更大？</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/opinion/20140503/270.html" title="“3百大战”续集上演，“神马”来袭？"> <img src="/uploads/allimg/c140503/13c10Y192F-35Y2_lit.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/opinion/20140503/270.html" title="“3百大战”续集上演，“神马”来袭？">“3百大战”续集上演，“神马”来袭？</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/opinion/20140503/264.html" title="“网业分离”？效率，垄断与消费者利益"> <img src="/uploads/allimg/c140503/13c10Y0Z60-24529_lit.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/opinion/20140503/264.html" title="“网业分离”？效率，垄断与消费者利益">“网业分离”？效率，垄断与消费者利益</a> </h3>
+</div>
+ 
+<!-- 当前栏目带图头条结束 --> 
+</div>
+<!--当前子栏目-->
+<ul class="sub-menu">
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/opinion/dianshang/">电商</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/opinion/chuanmei/">传媒</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/opinion/tongxin/">通信</a></li>
+
+</ul>
+<!--当前子栏目end--> 
+</div>
+</li><li class="menu-item mega-menu menu-item-type-taxonomy mega-menu menu-item-object-category mega-menu menu-item-has-children parent-list"> <a href="/start/">金融创投<span class="sub-indicator"></span></a><!-- 顶级栏目 -->
+<div class="mega-menu-block">
+<div class="mega-menu-content"> 
+<!-- 当前栏目带图头条 --> 
+<div class="mega-menu-item "> <a href="/start/20150303/373.html" title="【硅谷新公司】Lavanda：洗衣服务行业的Uber"> <img src="/uploads/allimg/c150303/14253ZQ6350-L457.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/start/20150303/373.html" title="【硅谷新公司】Lavanda：洗衣服务行业的Uber">【硅谷新公司】Lavanda：洗衣服务行业的Uber</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/start/20150303/375.html" title="PayPal 2.8亿美元收购移动支付公司Paydiant以对抗苹果支付"> <img src="/uploads/allimg/c150303/14253ZR2L0-b517.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/start/20150303/375.html" title="PayPal 2.8亿美元收购移动支付公司Paydiant以对抗苹果支付">PayPal 2.8亿美元收购移动支付公司Paydiant以对抗苹果支付</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/start/20150303/370.html" title="【硅谷新公司】最叫座App PhotoMath：用摄像头算数学题"> <img src="/uploads/allimg/c150303/14253ZP2030-236495.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/start/20150303/370.html" title="【硅谷新公司】最叫座App PhotoMath：用摄像头算数学题">【硅谷新公司】最叫座App PhotoMath：用摄像头算数学题</a> </h3>
+</div>
+ 
+<!-- 当前栏目带图头条结束 --> 
+</div>
+<!--当前子栏目-->
+<ul class="sub-menu">
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/start/chuangye/">创业</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/start/renwu/">人物</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/start/jinrong/">金融</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/start/touzi/">投资</a></li>
+
+</ul>
+<!--当前子栏目end--> 
+</div>
+</li><li class="menu-item mega-menu menu-item-type-taxonomy mega-menu menu-item-object-category mega-menu menu-item-has-children parent-list"> <a href="/business/">商业立场<span class="sub-indicator"></span></a><!-- 顶级栏目 -->
+<div class="mega-menu-block">
+<div class="mega-menu-content"> 
+<!-- 当前栏目带图头条 --> 
+<div class="mega-menu-item "> <a href="/business/20150303/378.html" title="三星收购苹果支付对手LoopPay，致力打造全面型移动钱包"> <img src="/uploads/allimg/c150303/14253Z91YZ-5bO.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/business/20150303/378.html" title="三星收购苹果支付对手LoopPay，致力打造全面型移动钱包">三星收购苹果支付对手LoopPay，致力打造全面型移动钱包</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/business/20150303/379.html" title="中国热钱，疯狂涌向硅谷"> <img src="/uploads/allimg/c150303/14253Z9210F-K330.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/business/20150303/379.html" title="中国热钱，疯狂涌向硅谷">中国热钱，疯狂涌向硅谷</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/business/20150303/385.html" title="P2P行业洗牌后，是否会出现寡头垄断的格局"> <img src="/uploads/allimg/c150303/14253Z934150-95427.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/business/20150303/385.html" title="P2P行业洗牌后，是否会出现寡头垄断的格局">P2P行业洗牌后，是否会出现寡头垄断的格局</a> </h3>
+</div>
+ 
+<!-- 当前栏目带图头条结束 --> 
+</div>
+<!--当前子栏目-->
+<ul class="sub-menu">
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/business/shangtou/">商投</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/business/anli/">案例</a></li>
+
+</ul>
+<!--当前子栏目end--> 
+</div>
+</li><li class="menu-item mega-menu menu-item-type-taxonomy mega-menu menu-item-object-category mega-menu menu-item-has-children parent-list"> <a href="/fangtan/">人物访谈<span class="sub-indicator"></span></a><!-- 顶级栏目 -->
+<div class="mega-menu-block">
+<div class="mega-menu-content"> 
+<!-- 当前栏目带图头条 --> 
+<div class="mega-menu-item "> <a href="/fangtan/20150502/393.html" title="从中国人到日本买光马桶盖说起：通货紧缩论调不靠谱"> <img src="/uploads/allimg/c150303/14253Z931460-J554.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/fangtan/20150502/393.html" title="从中国人到日本买光马桶盖说起：通货紧缩论调不靠谱">从中国人到日本买光马桶盖说起：通货紧缩论调不靠谱</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/fangtan/20150502/387.html" title="【钛晨报】蚂蚁金服让步与内蒙君正和解，换来天津政府支持"> <img src="/uploads/allimg/c150303/14253Z91K50-455H.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/fangtan/20150502/387.html" title="【钛晨报】蚂蚁金服让步与内蒙君正和解，换来天津政府支持">【钛晨报】蚂蚁金服让步与内蒙君正和解，换来天津政府支持</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/fangtan/20150502/386.html" title="详解互联网金融平台三大安全隐患：资金风险、黑色产业链、技术攻"> <img src="/uploads/allimg/c150303/14253Z915520-251T.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/fangtan/20150502/386.html" title="详解互联网金融平台三大安全隐患：资金风险、黑色产业链、技术攻">详解互联网金融平台三大安全隐患：资金风险、黑色产业链、技术攻</a> </h3>
+</div>
+ 
+<!-- 当前栏目带图头条结束 --> 
+</div>
+<!--当前子栏目-->
+<ul class="sub-menu">
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/fangtan/yingxiao/">营销</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/fangtan/fenxiang/">分享</a></li>
+
+</ul>
+<!--当前子栏目end--> 
+</div>
+</li><li class="menu-item mega-menu menu-item-type-taxonomy mega-menu menu-item-object-category mega-menu menu-item-has-children parent-list"> <a href="/tujie/">互联天下<span class="sub-indicator"></span></a><!-- 顶级栏目 -->
+<div class="mega-menu-block">
+<div class="mega-menu-content"> 
+<!-- 当前栏目带图头条 --> 
+<div class="mega-menu-item "> <a href="/tujie/20140503/280.html" title="钢铁电商的鳄鱼式生存法则"> <img src="/uploads/allimg/c140503/13c10Y12060-43194_lit.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/tujie/20140503/280.html" title="钢铁电商的鳄鱼式生存法则">钢铁电商的鳄鱼式生存法则</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/tujie/20140503/284.html" title="“3百大战”续集上演，“神马”来袭？"> <img src="/uploads/allimg/c140503/13c10Y192F-35Y2_lit.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/tujie/20140503/284.html" title="“3百大战”续集上演，“神马”来袭？">“3百大战”续集上演，“神马”来袭？</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/tujie/20140503/279.html" title="LinkedIn2014第一季度净亏1340万美元"> <img src="/uploads/allimg/c140503/13c10Y10J0-34326_lit.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/tujie/20140503/279.html" title="LinkedIn2014第一季度净亏1340万美元">LinkedIn2014第一季度净亏1340万美元</a> </h3>
+</div>
+ 
+<!-- 当前栏目带图头条结束 --> 
+</div>
+<!--当前子栏目-->
+<ul class="sub-menu">
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/tujie/yejie/">业界</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/tujie/yidong/">移动</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/tujie/jinrong/">金融</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/tujie/shouyou/">手游</a></li>
+
+</ul>
+<!--当前子栏目end--> 
+</div>
+</li>
+<li class="menu-item mega-menu menu-item-type-taxonomy mega-menu menu-item-object-category mega-menu menu-item-has-children parent-list"> <a href="/about/">关于我们<span class="sub-indicator"></span></a></li>
+
+</ul>
+</div>
+
+<div class="action"> 
+<a href="/member/fx_cy.php" class="n1" target="_blank" title="投稿">投稿</a>
+<div class="userbar">
+
+<div id="_userlogin">
+<div class="user">
+<span class="avatar"><img src="/skin/symbol-25.png"></span>
+<a href="javascript:;" class="n4 head-username">账户</a>
+<ul class="drap">
+<li class="i3"><a href="/member/index_do.php?fmdo=user&dopost=regnew" title="注  册" class="head-register">注  册</a></li>
+<li class="i6"><a href="/member/login.php" class="head-login" title="登陆">登  陆</a></li>
+</ul>
+</div>
+</div>
+ <script language="javascript" type="text/javascript">CheckLogin();</script>
+</div>
+</div>
+
+</div>
+</nav>
+<!-- 导航结束--> 
+</header>
+<!-- head结束-->
+<div id="main-content" class="container">	
+<div class="content">
+<div id="crumbs">您的位置： <a href="/">主页</a> &gt; 穹顶之下：告别“标准件”的新闻作品</div>
+<!--ad开始-->
+<div class="ads-post">					
+<a href="http://www.hymfx.com/" title="模板无忧广告位" target="_blank">
+<img src="/skin/ad01.jpg" alt="模板无忧广告位">
+</a>	
+</div>	<!--ad结束-->	
+<article class="post-22142 post type-post status-publish format-standard has-post-thumbnail hentry category-ps-skill category-colour_mixing_tutorials tag-kuler tag-colour_mixing post-listing">
+<div class="post-inner">
+<h1 class="post-title entry-title">穹顶之下：告别“标准件”的新闻作品</h1>						
+<p class="post-meta">	
+<span>编辑：<a href="http://www.hymfx.com/" title="模板无忧">模板无忧 </a></span>
+<span>|</span>	
+<span>时间：2014-05-30</span>
+<span>|</span>
+<span>热度 <script src="/plus/count.php?view=yes&aid=366&mid=1" type='text/javascript' language="javascript"></script>℃</span>
+<span>|</span>
+</p>
+<div class="clear"></div>
+<div class="entry">			
+<p><img class="size-full wp-image-198752 aligncenter" title="柴静" src="/uploads/allimg/c150303/14253ZMG40-130V.jpg" alt="" width="535" height="388" /></p>
+<p>事情你已经知道了：前央视记者<span class='wp_keywordlink_affiliate'></span>，在离开央视之后，用一年时间做了一期堪称加长版《新闻调查》的视频节目，这部严肃的<span class='wp_keywordlink'></span>作品（若你还喜欢这么叫的话）在刚刚过去的周末不可思议地刷爆了朋友圈——不夸张地说，其影响力或许超过了柴静过往的任何一期节目。那么问题来了，传播是怎么发生的？</p>
+<p>&nbsp;</p>
+<p><strong>恐惧本能</strong></p>
+<p>首先无疑是人类的恐惧本能。</p>
+<p>这个没什么可说的，尽管互联网对人类的影响之一就是分众传播（将这个世界切分成无数细碎的小共同体，蚕食着“大众”概念），但面对每个人共有的触及马斯洛最基本需求的安全问题时，哪怕乐观的国人已将雾霾编进了各种段子去调侃，还是会引发“大众”传播——何况新闻标题上出现了久未露面的柴静的名字。</p>
+<p>没办法，人类大脑就是这么设计的，当类似“雾霾”这种字眼的信息进入大脑，第一也是最重要的过滤器就是杏仁核，它总处于高度戒备状态，寻任何可能威胁生存东西——嗯，<strong>新闻媒体最喜欢争夺的就是杏仁核的注意，“坏消息”总比“好消息”更容易传播。</strong></p>
+<p>进一步说，若从进化心理学上剖析，对于人类这种群体动物而言，就像《品牌洗脑》的作者马丁·林斯特龙所言：“恐惧有一种违背常理但又有趣的黏合力。通过塑造一个共同的敌人，恐惧把人们聚在一起。”无疑，雾霾是人们共同的敌人。</p>
+<p>好吧，接下来让我们回到《穹顶之下》本身。</p>
+<p>&nbsp;</p>
+<p><strong>独立客观第三方</strong><strong></strong><strong></strong></p>
+<p>不知为何，在我观看视频时，脑中总回荡着王自如老师那三个经典标签：独立客观第三方。抛开阴谋论不谈，这部《穹顶之下》用这三个标签概括应不为过——不来自体制与官方，不来自任何既得利益者，甚至不来自一家新闻机构，它只来自一个人心中高悬的三个疑问：雾霾是什么？它从哪来？我们该怎么办？可以肯定，相比于央视这种中心化传播，且信息忽明忽暗的机构，尽管有“拿女儿说事”的质疑，但当为作品人格背书的是柴静本人，还是更易让人产生信任——你可以想象，如果同样的作品放在央视播出会有怎样的效果。</p>
+<p>这也让我想起一件事，大概几年前，有媒体问白岩松：“什么样的价码能让你离开央视？”白的回答是：“没有任何物质条件可以令我达成这一点，因为我想做电视新闻，央视依然是离新闻最近的地方。”</p>
+<p>也许无可否认，白岩松的回答在几年前代表某种程度的正确，但如今，据柴自己讲，“这一年我都是以个人身份去拜访他人，包括职能部门，没人拒绝提问，在回答时都毫无保留，直面问题。”嗯，如你所知，在一个人与人连接如此紧密，资源几乎唾手可得的时代，“离新闻最近的地方”将不再被大组织垄断（至少在相对自由的地方），那么这时候，拼的是什么？</p>
+<p>&nbsp;</p>
+<p><strong>告别“标准件”</strong></p>
+<p>答案也许是，<strong>谁来报道将变得非常重要。</strong></p>
+<p>不少人说，这部《穹顶之下》其实并没多少“干货”，从内容上看也谈不上震撼，毕竟雾霾早已有之，许多专业媒体和环保组织都曾在雾霾报道上投入巨大精力，为什么同样内容换成柴静讲，传播力度就会有如此差异？嗯，用最近很火的《从0到1》里的一句话解释就是：所有的斗争者或多或少都有些相似。</p>
+<p>毫无疑问，无论比特还是原子世界，“产能过剩”都是如今和未来的一个主旋律。优质内容太多了，<strong>如果你还纠缠在“事实层面”考虑传播，也许将或多或少陷入困境，因为真相是，很多时候，光有事实根本不发生传播</strong>——想想那些明星或者企业干巴巴的道歉。</p>
+<p>在近两个小时的作品里，柴静一直以第一人称叙述。早在《新闻调查》当出镜记者时，其所谓“个人代入感”很强的叙事风格就遭诟病——尤其那些将“理客中”视为唯一准则的传统新闻人，他们生怕记者的报道里出现哪怕一个“我”字，他们希望每一篇新闻作品都是质量上乘的“标准件”。而<strong>这部《穹顶之下》恰好不是“标准件”——它有温度，与“人”有关，说直白点，与一位母亲有关。</strong></p>
+<p>关于传播，有种很经典的观点认为，<strong>任何优秀的传播品本质上就两个字：故事（</strong><strong>story</strong><strong>），而故事的四要素——对抗性角色，代入感很强的情绪，细节和悬念——也将决定着传播力度。</strong>譬如，某种意义上，在人们的直觉或者说本能里，这部《穹顶之下》由两个故事内核构成：其一很明显，普通百姓与垄断企业以及各种有关部门的“对抗”关系；其二，一个母亲“给女儿讨个说法”的故事（你很难不这么联想，事实上，柴静本人也毫不避讳地坦言，这是她与雾霾的“私人恩怨”）。无论哪种，都能让观众产生极强的代入感和情感共鸣，这是任何将记者“藏”在新闻背后的传统媒体给不了的。另外，关于作品中“雾霾是什么？它从哪来？我们该怎么办？”疑问与答案的步步推进，无疑增添了故事的悬念。</p>
+<p>当然，还有细节。即使你看不出一些细微之处（比如左小祖咒老师操着怪异口音的配音），也一定会注意到：白色上衣牛仔裤的简单穿着，简洁优雅的PPT（我严重怀疑是罗永浩找人帮好友柴静制作的），这完全是一场科技产品发布会的style。此外，包括无人机，移轴摄影等新技术的应用，也充分展现了柴静十人左右团队的视频制作能力。就像和菜头所说：“相信这个周末除了各家媒体采访之外，各大视频网站和新闻集团正在排队邀请他们吃饭吧？是啊，各家都还缺个高端、大气、上档次的严肃视频节目呢。”</p>
+<p>嗯，刚刚过去的这个周末，再次说明了一件事——这是一个视频的时代。理由非常简单，<strong>相较于作者们文字风格的同质化，真人出境的视频节目在呈现“个人魅力”的手法上更为立体。</strong></p>
+<p>最后，同样作为一名记者，过去在看《看见》时，柴静有一句话令我印象非常深刻——“去，用你的皮肤感觉新闻。”</p>
+<p>毫无疑问，她做到了。</p>
+<p><span style="color: #888888;">【李北辰/文（微信公号：future-is-coming）】</span></p>
+<div class="pages"></div>
+<div id="footer">
+<div class="shell" style="margin-bottom:0; border:1px solid #508800; width:620px; background-color:#edffd3; clear:both;">
+<p style="font-size:12px; color:#4d4d4d; margin:0 15px; padding:0; line-height:3em;">非特殊说明，本文为本站原创（翻译）文章，转载请注明：本文转自：模板无忧。</p>
+<div style="position:relative; height:0; line-height:0;">
+<img id="dimension_weibo" src="/skin/weibo.jpg" style="display:none; position:absolute; left:20px; top:-150px; z-index:99;"><br>
+<img id="dimension_weixin" src="/skin/weixin.jpg" style="display:none; position:absolute; left:220px; top:-150px; z-index:99;">
+</div><!--鼠标经过二维码结束-->
+<ul style="margin:5px 0; padding:0; overflow:hidden;">
+<li onClick="window.open(&#39;#&#39;)" style="list-style:none; cursor:pointer; float:left; width:206px;  repeat-y right top; margin:10px 0 0 0;" onMouseOver="document.getElementById(&#39;dimension_weibo&#39;).style.display=&#39;block&#39;" onMouseOut="document.getElementById(&#39;dimension_weibo&#39;).style.display=&#39;none&#39;;">
+<div style="background:url(&#39;/skin/footer_pic.png&#39;) no-repeat 0 0; width:50px; height:50px; float:left; margin:5px 15px;"></div>
+<div class="footer_content">
+<p style="font-weight:bold; font-size:14px; color:#4d4d4d; margin:0; padding:0; ">官方微博</p>
+<p style="font-size:12px; color:#999; margin:0; line-height:1.5em; padding:0;"><span class="wp_keywordlink_affiliate"><a href="#" target="_blank">@微博账号</a></span><br>发布干货与官方活动</p>
+<p></p></div>
+</li>
+<li style="list-style:none; cursor:pointer; float:left; width:210px; repeat-y right top; margin:10px 0 0 0;" onMouseOver="document.getElementById(&#39;dimension_weixin&#39;).style.display=&#39;block&#39;" ;="" onMouseOut="document.getElementById(&#39;dimension_weixin&#39;).style.display=&#39;none&#39;;">
+<div style="background:url(&#39;/skin/footer_pic.png&#39;) no-repeat -55px 0; width:50px; height:50px; float:left; margin:5px 15px 5px 10px;"></div>
+<div class="footer_content">
+<p style="font-weight:bold; font-size:14px; color:#4d4d4d; margin:0; padding:0; ">官方微信</p>
+<p style="font-size:12px; color:#999; margin:0; line-height:1.5em; padding:0;">名称：微信名称<br>微信号：微信账号</p>
+<p></p></div>
+</li>
+<li onClick="window.open(&#39;#39;)" style="list-style:none; cursor:pointer; float:left; width:202px; background:none; margin:10px 0 0 0;">
+<div style="background:url(&#39;/skin/footer_pic.png&#39;) no-repeat -110px 0; width:50px; height:50px; float:left; margin:5px 15px 5px 10px;"></div>
+<div class="footer_content">
+<p style="font-weight:bold; font-size:14px; color:#4d4d4d; margin:0; padding:0; ">官方QQ群</p>
+<p style="font-size:12px; color:#999; margin:0; line-height:1.5em; padding:0;">QQ群:1234567<br>交流与学习织梦建站</p>
+<p></p></div>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="share-post">
+<span class="share-text">分享</span>
+<ul>
+<li style="width:300px;margin-top:-7px">
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</li></ul>
+<div class="clear"></div>
+</div>
+</div>
+</article>
+<p class="post-tag">标签：
+
+</p>		
+<!--ad开始-->
+<div class="ads-post">					
+<a href="http://www.hymfx.com/" title="模板无忧广告位" target="_blank">
+<img src="/skin/ad06.jpg" alt="模板无忧广告位">
+</a>	
+</div>	<!--ad结束-->		
+<div class="post-navigation">
+<div class="post-previous">上一篇：没有了 </div>
+<div class="post-next">下一篇：<a href='/start/20150303/367.html'>【图文】三星求变：借金属边框和曲面屏，应对挑战</a> </div>
+</div><!-- 上下篇结束 -->
+<section class="cat-box recent-box">
+<div class="cat-box-title">
+<h2>您可能喜欢</h2>
+<div class="stripe-line"></div>
+</div>
+<div class="cat-box-content">
+<div class="recent-item">		
+<div class="post-thumbnail" style="height:93px;overflow:hidden;">
+<a href="/start/20150303/372.html" title="【钛晨报】谷歌证实将进军虚拟网络运营商?" target="_blank">				
+<img src="/uploads/allimg/c150303/14253ZQ1210-45960.jpg" alt="?【钛晨报】谷歌证实将进军虚拟网络运营商">
+  <span class="overlay-icon"></span>
+</a>
+</div>
+<h3><a href="/start/20150303/372.html" title="?【钛晨报】谷歌证实将进军虚拟网络运营商" target="_blank">?【钛晨报】谷歌证实将进军虚拟网络运营商</a></h3>
+<p class="post-meta">
+2015年03月03日 		查看：	3 		</p>
+</div>
+<div class="recent-item">		
+<div class="post-thumbnail" style="height:93px;overflow:hidden;">
+<a href="/start/20150303/373.html" title="【硅谷新公司】Lavanda：洗衣服务行业的Uber?" target="_blank">				
+<img src="/uploads/allimg/c150303/14253ZQ6350-L457.jpg" alt="?【硅谷新公司】Lavanda：洗衣服务行业的Uber">
+  <span class="overlay-icon"></span>
+</a>
+</div>
+<h3><a href="/start/20150303/373.html" title="?【硅谷新公司】Lavanda：洗衣服务行业的Uber" target="_blank">?【硅谷新公司】Lavanda：洗衣服务行业的Uber</a></h3>
+<p class="post-meta">
+2015年03月03日 		查看：	0 		</p>
+</div>
+<div class="recent-item">		
+<div class="post-thumbnail" style="height:93px;overflow:hidden;">
+<a href="/start/20150303/368.html" title="百度70亿研发投入结出了哪些“果”？?" target="_blank">				
+<img src="/uploads/allimg/c150303/14253ZOU0-203P9.jpg" alt="?百度70亿研发投入结出了哪些“果”？">
+  <span class="overlay-icon"></span>
+</a>
+</div>
+<h3><a href="/start/20150303/368.html" title="?百度70亿研发投入结出了哪些“果”？" target="_blank">?百度70亿研发投入结出了哪些“果”？</a></h3>
+<p class="post-meta">
+2015年03月03日 		查看：	0 		</p>
+</div>
+<div class="recent-item">		
+<div class="post-thumbnail" style="height:93px;overflow:hidden;">
+<a href="/start/20150303/370.html" title="【硅谷新公司】最叫座App PhotoMath：用摄像头算数?" target="_blank">				
+<img src="/uploads/allimg/c150303/14253ZP2030-236495.jpg" alt="?【硅谷新公司】最叫座App PhotoMath：用摄像头算数">
+  <span class="overlay-icon"></span>
+</a>
+</div>
+<h3><a href="/start/20150303/370.html" title="?【硅谷新公司】最叫座App PhotoMath：用摄像头算数" target="_blank">?【硅谷新公司】最叫座App PhotoMath：用摄像头算数</a></h3>
+<p class="post-meta">
+2015年03月03日 		查看：	0 		</p>
+</div>
+<div class="recent-item">		
+<div class="post-thumbnail" style="height:93px;overflow:hidden;">
+<a href="/start/20150303/369.html" title="小米不做汽车，非不想为，实不能为也?" target="_blank">				
+<img src="/uploads/allimg/c150303/14253ZP05P-2252A.jpg" alt="?小米不做汽车，非不想为，实不能为也">
+  <span class="overlay-icon"></span>
+</a>
+</div>
+<h3><a href="/start/20150303/369.html" title="?小米不做汽车，非不想为，实不能为也" target="_blank">?小米不做汽车，非不想为，实不能为也</a></h3>
+<p class="post-meta">
+2015年03月03日 		查看：	0 		</p>
+</div>
+<div class="recent-item">		
+<div class="post-thumbnail" style="height:93px;overflow:hidden;">
+<a href="/start/20150303/374.html" title="duang！春节前后（2.9—3.1）码字停不下来，十篇文?" target="_blank">				
+<img src="/uploads/allimg/c150303/14253ZQX10-Ub8.png" alt="?duang！春节前后（2.9—3.1）码字停不下来，十篇文">
+  <span class="overlay-icon"></span>
+</a>
+</div>
+<h3><a href="/start/20150303/374.html" title="?duang！春节前后（2.9—3.1）码字停不下来，十篇文" target="_blank">?duang！春节前后（2.9—3.1）码字停不下来，十篇文</a></h3>
+<p class="post-meta">
+2015年03月03日 		查看：	0 		</p>
+</div>
+
+      
+          <div class="clear"></div>
+</div>
+</section>		
+<!--兼容版，可保证页面完全兼容-->
+<!--兼容版，可保证页面完全兼容-->
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrtiGimP',
+    conf = 'prod_afd47c4a21d8330cde2a76c1567c8d31';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+  })()
+</script>
+<!-- Comment END -->
+</div> 
+<!--边栏开始-->
+<aside id="sidebar">
+	<!--ad开始-->
+				<div class="text-html-box">
+			<a href="http://www.hymfx.com/" title="模板无忧广告位" target="_blank">
+				<img src="/skin/ps.jpg"></a>		<a href="http://www.hymfx.com/" title="模板无忧广告位" target="_blank">
+				<img src="/skin/ad02.jpg"></a>				</div>
+				<!--ad结束-->
+<div class="widget categort-posts">
+	<div class="widget-top"><h4>热门点击</h4><div class="stripe-line"></div></div>
+						<div class="widget-container">
+							<ul>	
+	<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/372.html" title="【钛晨报】谷歌证实将进军虚拟网络运营商">
+			<img src="/uploads/allimg/c150303/14253ZQ1210-45960.jpg" alt="【钛晨报】谷歌证实将进军虚拟网络运营商" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/372.html">【钛晨报】谷歌证实将进军虚拟网络运营商</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/366.html" title="穹顶之下：告别“标准件”的新闻作品">
+			<img src="/uploads/allimg/c150303/14253ZB3630-4N92.jpg" alt="穹顶之下：告别“标准件”的新闻作品" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/366.html">穹顶之下：告别“标准件”的新闻作品</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/367.html" title="【图文】三星求变：借金属边框和曲面屏，应对挑战">
+			<img src="/uploads/allimg/c150303/14253ZO25Z-1X616.jpg" alt="【图文】三星求变：借金属边框和曲面屏，应对挑战" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/367.html">【图文】三星求变：借金属边框和曲面屏，应对挑战</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/368.html" title="百度70亿研发投入结出了哪些“果”？">
+			<img src="/uploads/allimg/c150303/14253ZOU0-203P9.jpg" alt="百度70亿研发投入结出了哪些“果”？" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/368.html">百度70亿研发投入结出了哪些“果”？</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/369.html" title="小米不做汽车，非不想为，实不能为也">
+			<img src="/uploads/allimg/c150303/14253ZP05P-2252A.jpg" alt="小米不做汽车，非不想为，实不能为也" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/369.html">小米不做汽车，非不想为，实不能为也</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/370.html" title="【硅谷新公司】最叫座App PhotoMath：用摄像头算数">
+			<img src="/uploads/allimg/c150303/14253ZP2030-236495.jpg" alt="【硅谷新公司】最叫座App PhotoMath：用摄像头算数" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/370.html">【硅谷新公司】最叫座App PhotoMath：用摄像头算数</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/371.html" title="MWC2015亮点解读：智能手表扎堆出现，平板没了踪影">
+			<img src="/uploads/allimg/c150303/14253ZP5320-2La.jpg" alt="MWC2015亮点解读：智能手表扎堆出现，平板没了踪影" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/371.html">MWC2015亮点解读：智能手表扎堆出现，平板没了踪影</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/373.html" title="【硅谷新公司】Lavanda：洗衣服务行业的Uber">
+			<img src="/uploads/allimg/c150303/14253ZQ6350-L457.jpg" alt="【硅谷新公司】Lavanda：洗衣服务行业的Uber" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/373.html">【硅谷新公司】Lavanda：洗衣服务行业的Uber</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/374.html" title="duang！春节前后（2.9—3.1）码字停不下来，十篇文">
+			<img src="/uploads/allimg/c150303/14253ZQX10-Ub8.png" alt="duang！春节前后（2.9—3.1）码字停不下来，十篇文" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/374.html">duang！春节前后（2.9—3.1）码字停不下来，十篇文</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/375.html" title="PayPal 2.8亿美元收购移动支付公司Paydiant以对抗苹">
+			<img src="/uploads/allimg/c150303/14253ZR2L0-b517.jpg" alt="PayPal 2.8亿美元收购移动支付公司Paydiant以对抗苹" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/375.html">PayPal 2.8亿美元收购移动支付公司Paydiant以对抗苹</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+
+				</ul>
+		<div class="clear"></div>
+	</div></div>
+<div class="text-html-box" style="text-align:center;">
+				</div>
+				<!-- ad开始-->		
+			<div class="text-html-box">
+	<a href="http://www.hymfx.com/" title="模板无忧广告位" target="_blank">
+				<img src="/skin/ad03.jpg"></a>				</div>
+				<!-- ad结束-->		
+<div class="widget categort-posts">
+	<div class="widget-top"><h4>推荐资讯</h4><div class="stripe-line"></div></div>
+						<div class="widget-container">
+							<ul>	
+	<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/370.html" title="【硅谷新公司】最叫座App PhotoMath：用摄像头算数">
+			<img src="/uploads/allimg/c150303/14253ZP2030-236495.jpg" alt="【硅谷新公司】最叫座App PhotoMath：用摄像头算数" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/370.html">【硅谷新公司】最叫座App PhotoMath：用摄像头算数</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/374.html" title="duang！春节前后（2.9—3.1）码字停不下来，十篇文">
+			<img src="/uploads/allimg/c150303/14253ZQX10-Ub8.png" alt="duang！春节前后（2.9—3.1）码字停不下来，十篇文" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/374.html">duang！春节前后（2.9—3.1）码字停不下来，十篇文</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/366.html" title="穹顶之下：告别“标准件”的新闻作品">
+			<img src="/uploads/allimg/c150303/14253ZB3630-4N92.jpg" alt="穹顶之下：告别“标准件”的新闻作品" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/366.html">穹顶之下：告别“标准件”的新闻作品</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/371.html" title="MWC2015亮点解读：智能手表扎堆出现，平板没了踪影">
+			<img src="/uploads/allimg/c150303/14253ZP5320-2La.jpg" alt="MWC2015亮点解读：智能手表扎堆出现，平板没了踪影" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/371.html">MWC2015亮点解读：智能手表扎堆出现，平板没了踪影</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/373.html" title="【硅谷新公司】Lavanda：洗衣服务行业的Uber">
+			<img src="/uploads/allimg/c150303/14253ZQ6350-L457.jpg" alt="【硅谷新公司】Lavanda：洗衣服务行业的Uber" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/373.html">【硅谷新公司】Lavanda：洗衣服务行业的Uber</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/369.html" title="小米不做汽车，非不想为，实不能为也">
+			<img src="/uploads/allimg/c150303/14253ZP05P-2252A.jpg" alt="小米不做汽车，非不想为，实不能为也" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/369.html">小米不做汽车，非不想为，实不能为也</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/368.html" title="百度70亿研发投入结出了哪些“果”？">
+			<img src="/uploads/allimg/c150303/14253ZOU0-203P9.jpg" alt="百度70亿研发投入结出了哪些“果”？" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/368.html">百度70亿研发投入结出了哪些“果”？</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/375.html" title="PayPal 2.8亿美元收购移动支付公司Paydiant以对抗苹">
+			<img src="/uploads/allimg/c150303/14253ZR2L0-b517.jpg" alt="PayPal 2.8亿美元收购移动支付公司Paydiant以对抗苹" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/375.html">PayPal 2.8亿美元收购移动支付公司Paydiant以对抗苹</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/367.html" title="【图文】三星求变：借金属边框和曲面屏，应对挑战">
+			<img src="/uploads/allimg/c150303/14253ZO25Z-1X616.jpg" alt="【图文】三星求变：借金属边框和曲面屏，应对挑战" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/367.html">【图文】三星求变：借金属边框和曲面屏，应对挑战</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/372.html" title="【钛晨报】谷歌证实将进军虚拟网络运营商">
+			<img src="/uploads/allimg/c150303/14253ZQ1210-45960.jpg" alt="【钛晨报】谷歌证实将进军虚拟网络运营商" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/372.html">【钛晨报】谷歌证实将进军虚拟网络运营商</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+
+		
+				</ul>
+		<div class="clear"></div>
+	</div></div>
+<!-- ad开始-->		
+			<div class="text-html-box">
+	<a href="http://www.hymfx.com/" title="模板无忧广告位" target="_blank">
+				<img src="/skin/ad04.jpg"></a>				</div>
+				<!-- ad结束-->	
+				<div class="widget categort-posts">
+	<div class="widget-top"><h4>你可能感兴趣的</h4><div class="stripe-line"></div></div>
+						<div class="widget-container">
+							<ul>	
+	<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/369.html" title="小米不做汽车，非不想为，实不能为也">
+			<img src="/uploads/allimg/c150303/14253ZP05P-2252A.jpg" alt="小米不做汽车，非不想为，实不能为也" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/369.html">小米不做汽车，非不想为，实不能为也</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/375.html" title="PayPal 2.8亿美元收购移动支付公司Paydiant以对抗苹">
+			<img src="/uploads/allimg/c150303/14253ZR2L0-b517.jpg" alt="PayPal 2.8亿美元收购移动支付公司Paydiant以对抗苹" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/375.html">PayPal 2.8亿美元收购移动支付公司Paydiant以对抗苹</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/366.html" title="穹顶之下：告别“标准件”的新闻作品">
+			<img src="/uploads/allimg/c150303/14253ZB3630-4N92.jpg" alt="穹顶之下：告别“标准件”的新闻作品" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/366.html">穹顶之下：告别“标准件”的新闻作品</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/373.html" title="【硅谷新公司】Lavanda：洗衣服务行业的Uber">
+			<img src="/uploads/allimg/c150303/14253ZQ6350-L457.jpg" alt="【硅谷新公司】Lavanda：洗衣服务行业的Uber" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/373.html">【硅谷新公司】Lavanda：洗衣服务行业的Uber</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/371.html" title="MWC2015亮点解读：智能手表扎堆出现，平板没了踪影">
+			<img src="/uploads/allimg/c150303/14253ZP5320-2La.jpg" alt="MWC2015亮点解读：智能手表扎堆出现，平板没了踪影" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/371.html">MWC2015亮点解读：智能手表扎堆出现，平板没了踪影</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/368.html" title="百度70亿研发投入结出了哪些“果”？">
+			<img src="/uploads/allimg/c150303/14253ZOU0-203P9.jpg" alt="百度70亿研发投入结出了哪些“果”？" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/368.html">百度70亿研发投入结出了哪些“果”？</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/374.html" title="duang！春节前后（2.9—3.1）码字停不下来，十篇文">
+			<img src="/uploads/allimg/c150303/14253ZQX10-Ub8.png" alt="duang！春节前后（2.9—3.1）码字停不下来，十篇文" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/374.html">duang！春节前后（2.9—3.1）码字停不下来，十篇文</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/370.html" title="【硅谷新公司】最叫座App PhotoMath：用摄像头算数">
+			<img src="/uploads/allimg/c150303/14253ZP2030-236495.jpg" alt="【硅谷新公司】最叫座App PhotoMath：用摄像头算数" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/370.html">【硅谷新公司】最叫座App PhotoMath：用摄像头算数</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/372.html" title="【钛晨报】谷歌证实将进军虚拟网络运营商">
+			<img src="/uploads/allimg/c150303/14253ZQ1210-45960.jpg" alt="【钛晨报】谷歌证实将进军虚拟网络运营商" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/372.html">【钛晨报】谷歌证实将进军虚拟网络运营商</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/start/20150303/367.html" title="【图文】三星求变：借金属边框和曲面屏，应对挑战">
+			<img src="/uploads/allimg/c150303/14253ZO25Z-1X616.jpg" alt="【图文】三星求变：借金属边框和曲面屏，应对挑战" width="80" height="50"></a>
+		</div>
+	<h3><a href="/start/20150303/367.html">【图文】三星求变：借金属边框和曲面屏，应对挑战</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+
+				</ul>
+		<div class="clear"></div>
+	</div></div>
+		<!-- ad开始-->		
+			<div class="text-html-box">
+	<a href="http://www.hymfx.com/" title="模板无忧广告位" target="_blank">
+				<img src="/skin/ad05.jpg"></a>				</div>
+				<!-- ad结束-->							
+	</aside>		
+<!--边栏结束-->
+<div class="clear"></div>
+</div>
+<!--footer开始-->
+
+<footer>
+  <div id="footer-widget-area" class="wide-left-3c">
+    <div id="footer-first" class="footer-widgets-box">
+      <div class="footer-widget text-html">
+        <div class="footer-widget-top">
+          <h4>友情链接</h4>
+        </div>
+        <div class="footer-widget-container">
+          <div>
+            <ul>
+            <li><a href='http://www.dedecms.com' target='_blank'>织梦CMS</a> </li><li><a href='http://www.baidu.com' target='_blank'>今日头条</a> </li><li><a href='http://www.baidu.com' target='_blank'>创想拍</a> </li><li><a href='http://www.baidu.com' target='_blank'>创业家</a> </li><li><a href='http://www.baidu.com' target='_blank'>搜狐新闻</a> </li><li><a href='http://www.baidu.com' target='_blank'>证券之星</a> </li><li><a href='http://www.mb5u.com' target='_blank'>CMStop</a> </li><li><a href='http://www.baidu.com' target='_blank'>科技快报</a> </li>
+              
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-second" class="footer-widgets-box">
+      <div id="author-bio-widget-2" class="footer-widget Author-Bio">
+        <div class="footer-widget-top">
+          <h4>关于我们</h4>
+        </div>
+        <div class="footer-widget-container">
+          <div class="author-description"> 站窝窝以提供分享网页模板及建站常用素材资源教程为宗旨，内容涉及: 设计类，办公类，美术类等基于计算机数字影像和数字艺术领域方面，
+模板无忧将向着共享化、全面化、专业化、深度化、免费化的多元方向发展，打造实用快捷的功能模块，为会员及用户提供高质量的服务。 </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-third" class="footer-widgets-box">
+      <div id="author-bio-widget-3" class="footer-widget Author-Bio">
+        <div class="footer-widget-top">
+          <h4>扫码关注微信</h4>
+        </div>
+        <div class="footer-widget-container">
+          <div class="author-avatar"> <img alt="" src="/skin/weixin.jpg"> </div>
+          <div class="author-description"> </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</footer>
+<div class="clear"></div>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="alignleft"> 站窝窝-备案号 渝ICP备88888888  |
+
+<a href="/about/gywm/" target="_blank" title="">关于我们</a> |   
+
+<a href="/about/xxqbd/" target="_blank" title="">寻求报道</a> |   
+
+<a href="/about/swhz/" target="_blank" title="">商务合作</a> |   
+
+<a href="/about/bqsm/" target="_blank" title="">版权申明</a> |   
+
+<a href="/about/lxwm/" target="_blank" title="">联系我们</a> |   
+ 
+</div>
+  </div>
+</div>
+<div id="topcontrol" style="opacity: 0.02325625000000009; ">回到顶部</div>
+
+<!--footer结束-->	
+</div>
+</body></html>

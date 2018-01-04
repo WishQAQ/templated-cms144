@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>{dede:global name='keyword' function='RemoveXSS(@me)'/}搜索页_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" media="all" href="/skin/style.css">
+<link rel="stylesheet" type="text/css" media="all" href="/skin/front.min.css">
+<script type="text/javascript" src="/skin/jquery.js"></script>
+<script type="text/javascript" src="/skin/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="/skin/jquery.carouFredSel-6.2.1.js"></script>
+<script type="text/javascript" src="/skin/tie-scripts.js"></script><!--导航下拉-->
+<!--[if lt IE 9]>
+<script src="/skin/html5.js"></script>
+<script src="/skin/selectivizr-min.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie9.css" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie8.css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie7.css" />
+<![endif]-->
+</head>
+<body style="">
+	<div class="wrapper">
+		<!-- head开始-->
+{dede:include filename="head.htm"/}
+<!-- head结束-->
+	<div id="main-content" class="container">	
+<div class="content">
+	<div id="crumbs">您的位置： <a href="/">主页</a> &gt; {dede:global name='keyword' function='RemoveXSS(@me)'/}搜索页 &gt; </div>
+				<div class="cat-box-title">
+				<h2>{dede:global name='keyword' function='RemoveXSS(@me)'/}</h2>
+				<div class="stripe-line"></div>
+			</div>
+	
+        <!-- 列表循环开始 -->
+			<div class="post-listing">
+			{dede:list pagesize='16' titlelen='48'}
+				<article class="item-list">
+		<h2><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h2>
+		<p class="post-meta">
+						[field:pubdate function="MyDate('Y年m月d日',@me)"/] 查看：[field:click/] 
+								所属栏目：<a href="[field:typeurl/]" title="查看[field:typename/]的全部内容">[field:typename/]</a></p>							
+		<div class="post-thumbnail">
+			<a href="[field:arcurl/]" title="[field:title/]">
+				<img width="150" height="75" src="[field:litpic/]" class="attachment-thumbnail" alt="[field:title/]">			</a>
+		</div>
+					<div class="entry">
+			<p>[field:description/]... 			<a class="more-link" href="[field:arcurl/]">阅读更多 ?</a></p>
+		</div>					
+	</article>
+	{/dede:list} 
+</div>	
+<!-- 列表循环结束 -->
+<!-- 分页开始 -->
+	<div class="pages">{dede:pagelist listitem="index,end,pre,next,pageno" listsize="3"/}</div>	
+	<!-- 分页结束 -->	
+	</div> 
+	<!--边栏开始-->
+{dede:include filename="right.htm"/}
+	<!--边栏结束-->
+		<div class="clear"></div>
+	</div>
+	<!--footer开始-->
+{dede:include filename="footer.htm"/}
+<!--footer结束-->	
+</div>
+</body></html>

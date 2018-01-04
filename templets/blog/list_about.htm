@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link rel="stylesheet" type="text/css" href="/skin/style.css">
+<link rel="stylesheet" type="text/css" href="/skin/about.css">
+<!--导航下拉-->
+<!--[if lt IE 9]>
+<script src="/skin/html5.js"></script>
+<script src="/skin/selectivizr-min.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie9.css" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie8.css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie7.css" />
+<![endif]-->
+
+<script type="text/javascript">
+
+$(function(){
+$('.nav li').hover(function(){
+$(this).addClass('selected');							  
+},function(){
+$(this).removeClass('selected');		
+})		  
+})
+
+
+</script>
+</head>
+
+<body style="">
+<!--网站公共头部-->
+{dede:include filename="head.htm"/}
+<script type="text/javascript" src="/skin/jquery.js"></script>
+<script type="text/javascript" src="/skin/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="/skin/jquery.carouFredSel-6.2.1.js"></script>
+<script type="text/javascript" src="/skin/tie-scripts.js"></script>
+<!--@网站公共头部-->
+<div class="main">
+<div class="wrapper">
+<div class="imgbox clearfix">
+<div class="lft"> <img src="/images/img_01.png" alt=""> </div>
+<div class="rgt"> <img src="/images/img_02.png" alt=""> </div>
+</div>
+<div class="mainBox">
+<div class="leftBox">
+<ul class="subNav">
+{dede:channel type='son' row='8' currentstyle="<li class='on'><a href='~typelink~'>~typename~<i></i></a> </li>"}
+<li><a href='[field:typelink/]'>[field:typename/]<i></i></a> </li>
+{/dede:channel}
+</ul>
+</div>
+<!--leftbox-->
+
+<div class="rightBox">
+<div class="position"> 您所在的位置：{dede:field name='position'/}</div>
+<div class="body">
+<h1>{dede:field name='typename'/}</h1>
+<div class="detail">
+{dede:field.content/}
+</div>
+</div>
+</div>
+<!--rightbox-->
+
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<!--网站公共页脚-->
+{dede:include filename="footer.htm"/}
+<!--@网站公共页脚-->
+
+</body></html>

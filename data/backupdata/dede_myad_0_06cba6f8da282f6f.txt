@@ -1,0 +1,3 @@
+INSERT INTO `dede_myad` VALUES('2','0','0','sy','头部600*70','0','1372233934','1437897900','<script language=\"javascript\" src=\"http://ads.west263.com/vcp/getJScode/getJScode.asp?ReferenceID=732404&No=640x60\"></script>','');
+INSERT INTO `dede_myad` VALUES('3','0','0','page-ad4','内容页广告-1 250*250','0','1377091631','1442755620','<script language=\"javascript\" src=\"http://ads.west263.com/vcp/getJScode/getJScode.asp?ReferenceID=732404&No=250x250\"></script>','');
+INSERT INTO `dede_myad` VALUES('4','0','0','index-ad2','广告 960*90','0','1377092955','1442756940','<script language=\"javascript\" src=\"http://ads.west263.com/vcp/getJScode/getJScode.asp?ReferenceID=732404&No=960x90\"></script>','');

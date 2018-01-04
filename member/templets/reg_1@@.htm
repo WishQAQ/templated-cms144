@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>用户中心注册-无忧创意网（ies5.com）</TITLE>
+<META content=IE=7 http-equiv=X-UA-Compatible>
+<META content="text/html; charset=gbk" http-equiv=Content-Type><LINK 
+rel=stylesheet type=text/css href="/member/templets/images/css.css">
+<META name=GENERATOR content="MSHTML 8.00.6001.18702">
+<script src="templets/js/j.js" language="javascript" type="text/javascript"></script>
+<script type="text/javascript" language="javascript" src='templets/js/reg_new.js'></script>
+<script type="text/javascript" language="javascript" src='templets/js/CheckPassStrength.js'></script>
+<script type="text/javascript" language="javascript">
+<!--
+var reMethod = "<?php echo ($cfg_soft_lang == 'utf-8') ? 'POST' : 'GET';?>",pwdmin = <?php echo $cfg_mb_pwdmin; ?>;
+
+function changeAuthCode() {
+	var num = 	new Date().getTime();
+	var rand = Math.round(Math.random() * 10000);
+	num = num + rand;
+	$('#ver_code').css('visibility','visible');
+	if ($("#vdimgck")[0]) {
+		$("#vdimgck")[0].src = "../include/vdimgck.php?tag=" + num;
+	}
+	return false;	
+}
+
+function hideVc()
+{
+	$('#ver_code').css('visibility','hidden');
+}
+
+$(document).ready(function(){ 
+	$("#passwordLevel").removeClass().addClass("rank r0");
+	$("#vdcode").focus(function(){
+	  var leftpos = $("#vdcode").position().left;
+	  var toppos = $("#vdcode").position().top - 42;
+	  $('#ver_code').css('left', leftpos+'px');
+	  $('#ver_code').css('top', toppos+'px');
+	  $('#ver_code').css('visibility','visible');
+	});
+	$("input[type='password']").click(function(){
+	  hideVc()
+	});
+	$("#txtUsername").click(function(){
+	  hideVc()
+	});
+	$("input[type='radio']").focus(function(){
+	  hideVc()
+	});
+	/*
+	$("#vdcode").blur(function(){
+		  $('#ver_code').css('visibility','hidden');
+	});
+	*/
+})
+
+-->
+</script>
+<!--弹窗-->
+<style type="text/css" media="all">
+@import "/member/templets/ajax/jBox.css";
+</style>
+<script src="/member/templets/ajax/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="/member/templets/ajax/jBox-1.0.0.0.js" type="text/javascript"></script>
+<script type="text/javascript">
+function serializeParams(){
+   var ret='';
+   $('input[@grp=jBoxParam]').each( function(){
+      var $this = $(this);
+	  if ($this.attr('type')=='input')
+	  {
+	
+	     if( $this.val().length > 0 && $this.attr('disabled')!=true  )
+		  ret+=','+ $this.attr('name')+'='+$this.val();
+	  }
+	  else if ($this.attr('type')=='checkbox')
+	  {
+	     if (this.checked==true)
+	     {
+		     ret+=','+ $this.attr('name')+'='+$this.val();
+	     }
+	  }
+   });
+   ret = ret.substring(1);
+   $('#jBoxAttr').html( 'boxAttr Values:'+ret );
+   return ret;
+}
+</script>
+<!--弹窗结束-->
+</HEAD>
+<BODY>
+<?php include(DEDEMEMBER."/templets/login_head@@.htm"); ?>
+<DIV class="left main02"></DIV>
+<DIV class="right content_ri">
+<DIV class=content_ri01>
+<DIV class=login>无忧创意网<font color="red">注册中心</font></DIV>
+<DIV 
+style="PADDING-BOTTOM: 32px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px; _padding: 29px 0" 
+class=content_ri02>
+<DIV class=notice>
+<DIV class=notice02>?  &nbsp;用户名由4-8个(字母,数字)形成或组合<BR>?  &nbsp;用户昵称使你的账号更加个性化<BR>?  &nbsp;邮箱是你密码丢失时找回的重要方式</DIV></DIV>
+    <form method="post" action="reg.php" id="regUser" name="form2">
+      <input type="hidden" value="regbase" name="dopost"/>
+      <input type="hidden" value="1" name="step"/>
+      <input type="hidden" value="个人" name="mtype"/>
+<UL>
+  <LI class=li02>用户名： </LI>
+  <LI><INPUT class=input maxLength="20" name="userid" required id="txtUsername" />
+   <span id="_userid"></span> </LI> 
+  <LI class=li02>用户昵称： </LI>
+  <LI><INPUT class=input maxLength="20" name="uname" required id="uname"/>
+   <span id="_uname"/></span></LI> 
+  <LI class=li02>登录密码： </LI>
+  <LI><INPUT class=input type="password" required minlength="4" id="txtPassword" name="userpwd" onkeyup="passwordStrength(this.value)">
+    <span id="passwordStrength" class="strength0"><label id="passwordDescription"></label></span>
+  </LI> 
+    <LI class=li02>确认密码： </LI>
+  <LI><INPUT class=input type="password" required minlength="4" id="userpwdok" name="userpwdok">
+  <span id="_userpwdok"></span>
+  </LI> 
+    <LI class=li02>电子邮箱： </LI>
+  <LI><INPUT class=input name="email" required id="email"/>
+<span id="_email"></span>
+<input type="checkbox" checked="" value="" id="agree" name="agree"/>
+          已阅读并接受<a href="javascript://" onClick="jBox.open('iframe-jBoxID','iframe','/member/templets/xieyi.html','无忧创意网服务协议','width=530,height=400,center=true,minimizable=true,draggable=true,model=true,scrolling=true');">服务协议</a>
+<li class="submit02" style="text-align:left; border:none; padding-right:10px;width:300px;">
+<font color="#828282">我已有账号了？</font>&nbsp;&nbsp;&nbsp;<a href="login.php" title="登陆无忧网" style="color:#E21B1B;"><STRONG>立即登陆</STRONG></a>
+<INPUT id="btnSignCheck" class="submit" value="注&nbsp;&nbsp;册" type="submit" name="login_submit">
+  </LI></UL></FORM></DIV>
+<DIV class=content_ri04>
+</DIV></DIV></DIV></DIV>
+<DIV class=bottom></DIV></DIV></DIV>
+<?php include(DEDEMEMBER."/templets/login_footer@@.htm"); ?>
+</BODY></HTML>
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $cfg_soft_lang; ?>" />
+<title>空间设置 - 会员中心 - <?php echo $cfg_webname; ?></title>
+<link href="templets/style/base.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="templets/js/j.js"></script>
+<script type="text/javascript" src='templets/js/main.js'></script>
+<script type="text/javascript" src="templets/js/load.js"></script>
+<script type="text/javascript" src="templets/js/leftmenu.js"></script>
+</head>
+<body>
+<?php include(DEDEMEMBER."/templets/head@@.htm"); ?>
+<DIV class=content-box>
+<DIV class=content-box-header>
+<H3>空间设置</H3>
+<DIV class=clear></DIV></DIV>
+<DIV class=content-box-content>
+    <div id="mcpmain">
+      <div id="appTab"> 
+        <ul>
+		<li class="thisTab"><a href="kjsz.php"><span>空间设置</span></a></li>
+		<li><a href="spaceskin.php">风格选择</a></li>
+        </ul>
+      </div>
+     <form action="kjsz.php" method="post" enctype="multipart/form-data" name="form1">
+          <input type="hidden" name="dopost" value="save" />
+      <div id="mainCp">
+        <h3 class="meTitle"><strong>空间设置</strong></h3>
+        <div class="postForm">
+          <p class="cellBg">
+            <label>空间名称：</label>
+            <input name="spacename" type="text" id="spacename" value="<?php echo $spacename; ?>" maxlength="100" class="intxt"/>
+          </p>
+          <p>
+            <label>每页文档数：</label>
+            <input name="pagesize" type="text" id="pagesize" value="<?php echo $pagesize; ?>" maxlength="100" class="intxt"/>
+          </p>
+          <p class="cellBg">
+            <label>个人签名：</label>
+            <textarea name="sign" cols="50" id="sign"><?php echo $sign; ?></textarea> 少于50中文字
+          </p>
+          <p>
+            <label>空间公告：</label>
+            <?php GetEditor("spacenews",$spacenews,250,"MemberLit"); ?>
+          </p>
+          <p class="cellBg">
+<INPUT id=btnSubmit2 class=button value=完&nbsp;&nbsp;成 type=submit>  
+          </p>
+    </div>
+      </div>
+      </form>
+      <!--主操作区域 -->
+    </div>
+  </div>
+<?php include(DEDEMEMBER."/templets/foot@@.htm"); ?>
+</div>
+</body>
+</html>
+

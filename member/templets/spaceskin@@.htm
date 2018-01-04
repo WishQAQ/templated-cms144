@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $cfg_soft_lang; ?>" />
+<title>空间样式设定 - 会员中心 - <?php echo $cfg_webname; ?></title>
+<link href="templets/style/base.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="templets/js/j.js"></script>
+<script type="text/javascript" language='javascript'src='templets/js/main.js'></script>
+<script type="text/javascript" src="templets/js/load.js"></script>
+<script type="text/javascript" src="templets/js/leftmenu.js"></script>
+</head>
+<body>
+<?php include(DEDEMEMBER."/templets/head@@.htm"); ?>
+<DIV class=content-box>
+<DIV class=content-box-header>
+<H3>空间样式设定</H3>
+<DIV class=clear></DIV></DIV>
+<DIV class=content-box-content>
+    <div id="mcpmain">
+      <div id="appTab">
+        <ul>
+         <li><a href="kjsz.php"><span>空间设置</span></a></li>
+		<li class="thisTab"><a href="spaceskin.php">风格选择</a></li>
+        </ul>
+      </div>
+      <form action="kjsz.php" method="post" enctype="multipart/form-data" name="form1">
+          <input type="hidden" name="dopost" value="save" />
+      <div id="mainCp">
+        <h3 class="meTitle"><strong>样式列表</strong></h3>
+        <div style="margin-left:10px">
+          <table cellspacing="1" class="template">
+            <tbody>
+              <?php ListSkin(); ?>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </form>
+      <!--主操作区域 -->
+    </div>
+  </div>
+<?php include(DEDEMEMBER."/templets/foot@@.htm"); ?>
+</div>
+</body>
+</html>
+

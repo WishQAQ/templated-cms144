@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" media="all" href="/skin/style.css">
+<link rel="stylesheet" type="text/css" media="all" href="/skin/front.min.css">
+<!--导航下拉-->
+<!--[if lt IE 9]>
+<script src="/skin/html5.js"></script>
+<script src="/skin/selectivizr-min.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie9.css" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie8.css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie7.css" />
+<![endif]-->
+</head>
+<body style="">
+<div class="wrapper">
+<!-- head开始-->
+{dede:include filename="head.htm"/}
+<script type="text/javascript" src="/skin/jquery.js"></script>
+<script type="text/javascript" src="/skin/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="/skin/jquery.carouFredSel-6.2.1.js"></script>
+<script type="text/javascript" src="/skin/tie-scripts.js"></script>
+<!-- head结束-->
+<div id="main-content" class="container">	
+<div class="content">
+<div id="crumbs">您的位置： <a href="/">主页</a> &gt; <a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a> &gt; </div>
+<div class="cat-box-title">
+<h2>{dede:field name='typename'/}</h2>
+<div class="stripe-line"></div>
+</div>
+<div class="m_Box19">
+            <dl>
+            	<dt>最新标签</dt>
+                <dd>
+                	
+            {dede:tag row='60' sort='new'}
+            <a href='[field:link/]' class='tagc[field:highlight /]'>[field:tag /]</a>
+            {/dede:tag}
+                    
+				</dd>
+                <dt>热门标签</dt>
+                <dd>
+                	
+            {dede:tag row='90' sort='month'}
+            <a href='[field:link/]' class='tagc[field:highlight /]'>[field:tag /]</a>
+            {/dede:tag}
+                    
+				</dd>
+                <dt>随机标签</dt>
+                <dd>
+                	
+            {dede:tag row='100' sort='rand'}
+            <a href='[field:link/]' class='tagc[field:highlight /]'>[field:tag /]</a>
+            {/dede:tag}
+                    
+				</dd>
+            </dl>
+    	</div>
+</div> 
+<!--边栏开始-->
+{dede:include filename="right_tag.htm"/}
+<!--边栏结束-->
+<div class="clear"></div>
+</div>
+<!--footer开始-->
+{dede:include filename="footer.htm"/}
+<!--footer结束-->	
+</div>
+</body></html>

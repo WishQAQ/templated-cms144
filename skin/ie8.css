@@ -1,0 +1,16 @@
+﻿/*做最好的织梦模板*/
+body{ font-family:"微软雅黑"; font-style:normal;}
+.overlay-icon{ display:none;}
+.group_items {
+	width: 614px;
+	height:175px !important;
+}
+
+#main-nav ul li {margin-top:8px;}
+.top-nav ul , #main-nav ul li.current-menu-item, #main-nav ul li.current-menu-parent, #main-nav ul li.current-page-ancestor {margin-top:3px;}
+.flex-direction-nav a { display:none}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover , .flexslider:hover .flex-prev , .flexslider:hover .flex-next { display:block;}
+
+.mega-menu-content .mega-menu-item{ width:230px; height:185px; overflow:hidden;}
+.mega-menu-content .mega-menu-item a{width:230px; height:125px;}
+.mega-menu-content .mega-menu-item img{width:230px; height:125px; display:block; position:relative; z-index:99;}

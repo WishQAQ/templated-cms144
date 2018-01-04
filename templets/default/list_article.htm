@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:field.title/}-{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_basehost/}/skin/style/ningmp.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+{dede:include filename="head.htm"/}
+
+<div class="dangq">
+<ul>
+  <li>当前位置：{dede:field name='position'/}</li></ul>
+</div>
+<div class="xlist">
+{dede:list pagesize='10' titlelen='60'}
+<div class="xnlist">
+   <div class="picxn">[field:imglink/]</div>
+  <div class="zwlist">
+  <ul>
+  <li><span>[field:pubdate function="GetDateTimeMK(@me)"/]</span><a href='[field:arcurl/]'>[field:title/]</a></li>
+  <p>[field:description/]...</p>
+  </ul>
+  </div>
+</div>
+{/dede:list}
+<div class="jogger">{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}</div>
+</div>
+<div class="listy">
+<div class="tjnr">
+<p>栏目相关</p>
+<ul style="border-top:1px solid #5fb74b; padding-top:10px">
+{dede:arclist row=14 titlelen=36 orderby='rand' }
+<li><a href='[field:arcurl/]'>[field:title/]</a></li>
+{/dede:arclist}
+</ul>
+</div>
+
+<div class="nrmk1">
+ <script src='/plus/ad_js.php?aid=3' language='javascript'></script>
+</div>
+<p class="nrbt">热门排行</p>
+<div class="nrmk3">
+<ul>
+{dede:arclist row=10 titlelen=36 orderby='click' }
+<li><a href='[field:arcurl/]'>[field:title/]</a></li>
+{/dede:arclist}
+</ul>
+</div>
+</div>
+</div>
+
+{dede:include filename="footer.htm"/}
+</body>
+</html>

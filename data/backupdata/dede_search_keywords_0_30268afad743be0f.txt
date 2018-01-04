@@ -1,0 +1,15 @@
+INSERT INTO `dede_search_keywords` VALUES('1','名','名','8','67','1376386187','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','小','小','1','12','1376617115','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','在这里搜索...','在这里 搜索 ...','12','1','1376664075','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','kkk','kkk','1','0','1376663578','0','0');
+INSERT INTO `dede_search_keywords` VALUES('5','搜索','搜索','1','0','1376663585','0','0');
+INSERT INTO `dede_search_keywords` VALUES('6','sdfdsf','sdfdsf','4','0','1376663859','0','0');
+INSERT INTO `dede_search_keywords` VALUES('7','杀杀杀','杀杀杀','1','0','1376664083','0','0');
+INSERT INTO `dede_search_keywords` VALUES('8','座右铭','座右铭','5','19','1377093289','0','0');
+INSERT INTO `dede_search_keywords` VALUES('9','离职','离职','1','0','1388556714','0','0');
+INSERT INTO `dede_search_keywords` VALUES('10','阿里','阿里','6','6','1430571732','0','0');
+INSERT INTO `dede_search_keywords` VALUES('11','收缩','收缩','1','0','1425818659','0','0');
+INSERT INTO `dede_search_keywords` VALUES('12','百度','百度','4','1','1426996304','0','0');
+INSERT INTO `dede_search_keywords` VALUES('13',' 2',' 2','4','16','1425819401','0','0');
+INSERT INTO `dede_search_keywords` VALUES('14','阿里巴巴','阿里巴巴 阿里巴巴','1','4','1426996279','0','0');
+INSERT INTO `dede_search_keywords` VALUES('15','淘宝','淘宝','1','0','1426996295','0','0');

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>搜索页</title>
+<link href="{dede:global.cfg_basehost/}/skin/style/ningmp.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+{dede:include filename="head.htm"/}
+
+<div class="sosuo">
+<h2>相关搜索</h2>
+<div class="xgsos">
+
+<ul>
+{dede:list pagesize='20' }
+<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+<p>[field:description/]......</p>
+<p><a href="[field:arcurl/]">[field:global.cfg_basehost/][field:arcurl/]</a>分类：<a href="[field:typeurl/]" target="_blank">[field:typename/]</a> 点击：[field:click/] 日期：[field:stime/]</p>
+{/dede:list}
+</ul>
+</div>
+<div class="jogger">{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}</div>
+</div>
+<div class="listy">
+<div class="tjnr">
+<p>相关搜索</p>
+<ul style="border-top:1px solid #8fbf00; padding-top:10px">
+
+<li>{dede:likewords num='8'/}</li>
+
+</ul>
+</div>
+
+<div class="nrmk1">
+ <script src='/plus/ad_js.php?aid=3' language='javascript'></script>
+</div>
+</div>
+</div>
+
+{dede:include filename="footer.htm"/}
+</body>
+</html>

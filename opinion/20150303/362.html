@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>58安居客与链家德佑两大阵营的房产O2O对决_dedecms文章资讯博客模板(会员中心+手机版)</title>
+<meta name="keywords" content="58同城,O2O,房地产,投稿" />
+<meta name="description" content="58同城和链家地产，为了在房产O2O上一击致胜，前者收购安居客组建房产事业群，后者则深耕自如品牌，合并德佑地产。不论是将线上优势积累多年的58同城、安居客等，还是线下门店众多的链家地产，其都在向自己原有的弱点进行补强，构建Online到Offline的闭环生态系统。" />
+<link rel="stylesheet" type="text/css" media="all" href="/skin/style.css">
+<link rel="stylesheet" type="text/css" media="all" href="/skin/front.min.css">
+<script type="text/javascript" src="/skin/jquery.js"></script>
+<script type="text/javascript" src="/skin/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="/skin/jquery.carouFredSel-6.2.1.js"></script>
+<script type="text/javascript" src="/skin/tie-scripts.js"></script><!--导航下拉-->
+<!--[if lt IE 9]>
+<script src="/skin/html5.js"></script>
+<script src="/skin/selectivizr-min.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie9.css" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie8.css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie7.css" />
+<![endif]-->
+</head>
+<body>
+<div class="wrapper">
+<!-- head开始-->
+<script type="text/javascript">
+    var mobileUrl="/wap.php", 
+        mobile = (/mmp|symbian|smartphone|midp|wap|phone|xoom|iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+    if (mobile) {
+        window.location = mobileUrl;
+    }
+</script>
+
+<script type="text/javascript" src="/skin/jquery1.js"></script>
+<script type="text/javascript" src="/skin/common.js"></script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+
+	$(function(){
+		$("a[_for]").mouseover(function(){
+			$(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+			$(this).addClass("thisclass").blur();
+			$("#"+$(this).attr("_for")).show();
+		});
+		$("a[_for=uc_member]").mouseover();
+		$("a[_for=flink_1]").mouseover();
+	});
+	
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+</script>
+<header>
+<!-- 顶部菜单及搜索-->
+
+<div class="top-nav">
+<div class="midBox">
+<div class="top-menu">
+<ul class="menu">
+
+<li><a href="/about/gywm/" target="_blank" title="">关于我们</a></li> 
+
+<li><a href="/about/xxqbd/" target="_blank" title="">寻求报道</a></li> 
+
+<li><a href="/about/swhz/" target="_blank" title="">商务合作</a></li> 
+
+<li><a href="/about/bqsm/" target="_blank" title="">版权申明</a></li> 
+
+<li><a href="/about/lxwm/" target="_blank" title="">联系我们</a></li> 
+ 
+<li><a href="/tags.php" target="_blank" title="">TAG标签</a></li> 
+
+</ul>
+</div>
+<!-- search-->
+<div class="search-block">
+<form method="get" id="searchform" action="/plus/search.php" target="_blank">
+<input class="search-button" type="submit" value="搜索">
+<input type="text" id="s" name="q" value="搜索..." onFocus="if (this.value == '搜索...') {this.value = '';}" onBlur="if (this.value == '') {this.value = '搜索...';}">
+</form>
+</div>
+</div>
+</div>
+<!-- 顶部菜单及搜索结束-->
+<div class="header-content">
+<div class="midBox">
+<div class="logo" style="margin-top:5px">
+<h1> <a title="模板无忧" href="/"> <img src="/skin/logo12.png" alt="模板无忧"><strong>模板无忧</strong> </a> </h1>
+</div>
+<!-- .logo /-->
+<div class="ads-top">
+<ul>
+<li style="float:left; width:80px; padding-top:20px"> <a href="/" target="_blank" title="新浪微博"> <img src="/skin/sina.png" alt="新浪微博"></a> </li>
+<li style="float:left; width:80px; padding-top:20px"> <a href="/" target="_blank" title="QQ空间"> <img src="/skin/qzone.png" alt="QQ空间"></a> </li>
+<li style="float:left; width:80px; padding-top:20px"> <a href="/" target="_blank" title="在线交谈"> <img src="/skin/qq.png" alt="在线交谈"></a> </li>
+</ul>
+</div>
+<!-- 关注图标结束-->
+<div class="clear"></div>
+</div>
+</div>
+<!-- 导航-->
+<nav id="main-nav" class="fixed-enabled">
+<div class="container">
+<div class="main-menu">
+<ul id="menu-main" class="menu">
+<li class="menu-item  menu-item-type-custom  menu-item-object-custom  current-menu-item  current_page_item  menu-item-home"> <a title="首页" href="/">模板无忧</a></li>
+<li class="menu-item mega-menu menu-item-type-taxonomy mega-menu menu-item-object-category mega-menu menu-item-has-children parent-list"> <a href="/opinion/">商业观点<span class="sub-indicator"></span></a><!-- 顶级栏目 -->
+<div class="mega-menu-block">
+<div class="mega-menu-content"> 
+<!-- 当前栏目带图头条 --> 
+<div class="mega-menu-item "> <a href="/opinion/20140503/264.html" title="“网业分离”？效率，垄断与消费者利益"> <img src="/uploads/allimg/c140503/13c10Y0Z60-24529_lit.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/opinion/20140503/264.html" title="“网业分离”？效率，垄断与消费者利益">“网业分离”？效率，垄断与消费者利益</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/opinion/20140503/270.html" title="“3百大战”续集上演，“神马”来袭？"> <img src="/uploads/allimg/c140503/13c10Y192F-35Y2_lit.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/opinion/20140503/270.html" title="“3百大战”续集上演，“神马”来袭？">“3百大战”续集上演，“神马”来袭？</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/opinion/20150303/359.html" title="三星入局移动支付混战：谷歌苹果三星沃尔玛Paypal谁的胜算更大？"> <img src="/uploads/allimg/c150303/14253ZA63Z-5XZ.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/opinion/20150303/359.html" title="三星入局移动支付混战：谷歌苹果三星沃尔玛Paypal谁的胜算更大？">三星入局移动支付混战：谷歌苹果三星沃尔玛Paypal谁的胜算更大？</a> </h3>
+</div>
+ 
+<!-- 当前栏目带图头条结束 --> 
+</div>
+<!--当前子栏目-->
+<ul class="sub-menu">
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/opinion/dianshang/">电商</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/opinion/chuanmei/">传媒</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/opinion/tongxin/">通信</a></li>
+
+</ul>
+<!--当前子栏目end--> 
+</div>
+</li><li class="menu-item mega-menu menu-item-type-taxonomy mega-menu menu-item-object-category mega-menu menu-item-has-children parent-list"> <a href="/start/">金融创投<span class="sub-indicator"></span></a><!-- 顶级栏目 -->
+<div class="mega-menu-block">
+<div class="mega-menu-content"> 
+<!-- 当前栏目带图头条 --> 
+<div class="mega-menu-item "> <a href="/start/20150303/370.html" title="【硅谷新公司】最叫座App PhotoMath：用摄像头算数学题"> <img src="/uploads/allimg/c150303/14253ZP2030-236495.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/start/20150303/370.html" title="【硅谷新公司】最叫座App PhotoMath：用摄像头算数学题">【硅谷新公司】最叫座App PhotoMath：用摄像头算数学题</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/start/20150303/373.html" title="【硅谷新公司】Lavanda：洗衣服务行业的Uber"> <img src="/uploads/allimg/c150303/14253ZQ6350-L457.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/start/20150303/373.html" title="【硅谷新公司】Lavanda：洗衣服务行业的Uber">【硅谷新公司】Lavanda：洗衣服务行业的Uber</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/start/20150303/375.html" title="PayPal 2.8亿美元收购移动支付公司Paydiant以对抗苹果支付"> <img src="/uploads/allimg/c150303/14253ZR2L0-b517.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/start/20150303/375.html" title="PayPal 2.8亿美元收购移动支付公司Paydiant以对抗苹果支付">PayPal 2.8亿美元收购移动支付公司Paydiant以对抗苹果支付</a> </h3>
+</div>
+ 
+<!-- 当前栏目带图头条结束 --> 
+</div>
+<!--当前子栏目-->
+<ul class="sub-menu">
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/start/chuangye/">创业</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/start/renwu/">人物</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/start/jinrong/">金融</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/start/touzi/">投资</a></li>
+
+</ul>
+<!--当前子栏目end--> 
+</div>
+</li><li class="menu-item mega-menu menu-item-type-taxonomy mega-menu menu-item-object-category mega-menu menu-item-has-children parent-list"> <a href="/business/">商业立场<span class="sub-indicator"></span></a><!-- 顶级栏目 -->
+<div class="mega-menu-block">
+<div class="mega-menu-content"> 
+<!-- 当前栏目带图头条 --> 
+<div class="mega-menu-item "> <a href="/business/20150303/385.html" title="P2P行业洗牌后，是否会出现寡头垄断的格局"> <img src="/uploads/allimg/c150303/14253Z934150-95427.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/business/20150303/385.html" title="P2P行业洗牌后，是否会出现寡头垄断的格局">P2P行业洗牌后，是否会出现寡头垄断的格局</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/business/20150303/379.html" title="中国热钱，疯狂涌向硅谷"> <img src="/uploads/allimg/c150303/14253Z9210F-K330.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/business/20150303/379.html" title="中国热钱，疯狂涌向硅谷">中国热钱，疯狂涌向硅谷</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/business/20150303/378.html" title="三星收购苹果支付对手LoopPay，致力打造全面型移动钱包"> <img src="/uploads/allimg/c150303/14253Z91YZ-5bO.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/business/20150303/378.html" title="三星收购苹果支付对手LoopPay，致力打造全面型移动钱包">三星收购苹果支付对手LoopPay，致力打造全面型移动钱包</a> </h3>
+</div>
+ 
+<!-- 当前栏目带图头条结束 --> 
+</div>
+<!--当前子栏目-->
+<ul class="sub-menu">
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/business/shangtou/">商投</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/business/anli/">案例</a></li>
+
+</ul>
+<!--当前子栏目end--> 
+</div>
+</li><li class="menu-item mega-menu menu-item-type-taxonomy mega-menu menu-item-object-category mega-menu menu-item-has-children parent-list"> <a href="/fangtan/">人物访谈<span class="sub-indicator"></span></a><!-- 顶级栏目 -->
+<div class="mega-menu-block">
+<div class="mega-menu-content"> 
+<!-- 当前栏目带图头条 --> 
+<div class="mega-menu-item "> <a href="/fangtan/20150502/387.html" title="【钛晨报】蚂蚁金服让步与内蒙君正和解，换来天津政府支持"> <img src="/uploads/allimg/c150303/14253Z91K50-455H.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/fangtan/20150502/387.html" title="【钛晨报】蚂蚁金服让步与内蒙君正和解，换来天津政府支持">【钛晨报】蚂蚁金服让步与内蒙君正和解，换来天津政府支持</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/fangtan/20150502/386.html" title="详解互联网金融平台三大安全隐患：资金风险、黑色产业链、技术攻"> <img src="/uploads/allimg/c150303/14253Z915520-251T.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/fangtan/20150502/386.html" title="详解互联网金融平台三大安全隐患：资金风险、黑色产业链、技术攻">详解互联网金融平台三大安全隐患：资金风险、黑色产业链、技术攻</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/fangtan/20150502/393.html" title="从中国人到日本买光马桶盖说起：通货紧缩论调不靠谱"> <img src="/uploads/allimg/c150303/14253Z931460-J554.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/fangtan/20150502/393.html" title="从中国人到日本买光马桶盖说起：通货紧缩论调不靠谱">从中国人到日本买光马桶盖说起：通货紧缩论调不靠谱</a> </h3>
+</div>
+ 
+<!-- 当前栏目带图头条结束 --> 
+</div>
+<!--当前子栏目-->
+<ul class="sub-menu">
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/fangtan/yingxiao/">营销</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/fangtan/fenxiang/">分享</a></li>
+
+</ul>
+<!--当前子栏目end--> 
+</div>
+</li><li class="menu-item mega-menu menu-item-type-taxonomy mega-menu menu-item-object-category mega-menu menu-item-has-children parent-list"> <a href="/tujie/">互联天下<span class="sub-indicator"></span></a><!-- 顶级栏目 -->
+<div class="mega-menu-block">
+<div class="mega-menu-content"> 
+<!-- 当前栏目带图头条 --> 
+<div class="mega-menu-item "> <a href="/tujie/20140503/284.html" title="“3百大战”续集上演，“神马”来袭？"> <img src="/uploads/allimg/c140503/13c10Y192F-35Y2_lit.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/tujie/20140503/284.html" title="“3百大战”续集上演，“神马”来袭？">“3百大战”续集上演，“神马”来袭？</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/tujie/20140503/280.html" title="钢铁电商的鳄鱼式生存法则"> <img src="/uploads/allimg/c140503/13c10Y12060-43194_lit.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/tujie/20140503/280.html" title="钢铁电商的鳄鱼式生存法则">钢铁电商的鳄鱼式生存法则</a> </h3>
+</div>
+<div class="mega-menu-item "> <a href="/tujie/20140503/279.html" title="LinkedIn2014第一季度净亏1340万美元"> <img src="/uploads/allimg/c140503/13c10Y10J0-34326_lit.jpg" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="/tujie/20140503/279.html" title="LinkedIn2014第一季度净亏1340万美元">LinkedIn2014第一季度净亏1340万美元</a> </h3>
+</div>
+ 
+<!-- 当前栏目带图头条结束 --> 
+</div>
+<!--当前子栏目-->
+<ul class="sub-menu">
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/tujie/yejie/">业界</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/tujie/yidong/">移动</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/tujie/jinrong/">金融</a></li>
+
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="/tujie/shouyou/">手游</a></li>
+
+</ul>
+<!--当前子栏目end--> 
+</div>
+</li>
+<li class="menu-item mega-menu menu-item-type-taxonomy mega-menu menu-item-object-category mega-menu menu-item-has-children parent-list"> <a href="/about/">关于我们<span class="sub-indicator"></span></a></li>
+
+</ul>
+</div>
+
+<div class="action"> 
+<a href="/member/fx_cy.php" class="n1" target="_blank" title="投稿">投稿</a>
+<div class="userbar">
+
+<div id="_userlogin">
+<div class="user">
+<span class="avatar"><img src="/skin/symbol-25.png"></span>
+<a href="javascript:;" class="n4 head-username">账户</a>
+<ul class="drap">
+<li class="i3"><a href="/member/index_do.php?fmdo=user&dopost=regnew" title="注  册" class="head-register">注  册</a></li>
+<li class="i6"><a href="/member/login.php" class="head-login" title="登陆">登  陆</a></li>
+</ul>
+</div>
+</div>
+ <script language="javascript" type="text/javascript">CheckLogin();</script>
+</div>
+</div>
+
+</div>
+</nav>
+<!-- 导航结束--> 
+</header>
+<!-- head结束-->
+<div id="main-content" class="container">	
+<div class="content">
+<div id="crumbs">您的位置： <a href="/">主页</a> &gt; 58安居客与链家德佑两大阵营的房产O2O对决</div>
+<!--ad开始-->
+<div class="ads-post">					
+<a href="http://www.hymfx.com/" title="模板无忧广告位" target="_blank">
+<img src="/skin/ad01.jpg" alt="模板无忧广告位">
+</a>	
+</div>	<!--ad结束-->	
+<article class="post-22142 post type-post status-publish format-standard has-post-thumbnail hentry category-ps-skill category-colour_mixing_tutorials tag-kuler tag-colour_mixing post-listing">
+<div class="post-inner">
+<h1 class="post-title entry-title">58安居客与链家德佑两大阵营的房产O2O对决</h1>						
+<p class="post-meta">	
+<span>编辑：<a href="http://www.hymfx.com/" title="模板无忧">模板无忧 </a></span>
+<span>|</span>	
+<span>时间：2014-05-30</span>
+<span>|</span>
+<span>热度 <script src="/plus/count.php?view=yes&aid=362&mid=1" type='text/javascript' language="javascript"></script>℃</span>
+<span>|</span>
+</p>
+<div class="clear"></div>
+<div class="entry">			
+<p>&nbsp;</p>
+<p></p>
+<p>高手对决，无招胜有招，杀人绝技，无形胜有形。<span class='wp_keywordlink_affiliate'></span>和链家地产，为了在房产<span class='wp_keywordlink_affiliate'></span>上一击致胜，前者收购安居客组建房产事业群，后者则深耕自如品牌，合并德佑地产等措施，早已经在登上紫禁城之颠决斗前，都练就了独门绝技，立于不败之地。</p>
+<p>&nbsp;</p>
+<p><strong style="line-height: 1.5;">58同城构建房产事业群</strong></p>
+<p>3月2日，58同城以2.6701亿美元拿下了<span class='wp_keywordlink_affiliate'></span>租售信息服务平台安居客，并以后者为班底成立房产事业群。客观说，58同城这个大招确实威力无穷。此前58同城的子品牌“58到家”已经推出了保洁、上门美甲、搬家速运等业务，但对于租房、买房等大体量、尤其在北上广深更有价值的业务来说，房产O2O才是58同城的必杀技。</p>
+<p>安居客的优势在于大城市的二手房租售优势，正如58同城CEO姚劲波介绍说：安居客在一二线尤其是沿海城市拥有市场优势。在房地产租售尤其是新房、二手房售卖领域拥有成熟经验和良好的市场份额。那么其合并安居客的野心，至少有三点：</p>
+<p>第一，拿下互联网房源入口安居客，58同城的优势是二三线甚至四线城市拥有庞大的日益增长的中小企业客户，这正好是双方资源的一种互补。</p>
+<p>第二，将本地生活服务拉升到O2O行业大市场体量，虽然58同城已经在同城信息服务上比未上市的赶集网领先，但其二者本地生活信息这个领域在多年的搏杀中其实也陷入发展瓶颈，而58到家、58同城房产事业群等品牌的先后建立，是58同城将自己在O2O行业的价值，提升到更具市场价值的地位，将给投资者带来强心剂。</p>
+<p>第三，多年来58同城在线上优势明显，但涉足房产领域，其本身并无丝毫优势可言，此次合并安居客，将自己在互联网房源信息的线上优势完善，向此前在北京地区最大的线下房产中介的链家地产进行挑战，寻求用线上的方式与对手展开争夺，打赢房产O2O之战。</p>
+<p>&nbsp;</p>
+<p><strong>链家合并德佑</strong></p>
+<p>2015年2月9日，链家地产与成都最大中介伊诚地产宣布合并之后，3月1日，链家与上海的德佑地产合并。合并后的新链家，至2017年将在全国范围内打造万亿级平台，佣金收入达200亿元，经纪人达10万名。链家一直在房产线下资源上深耕多年，此前的这一系列动作，我们大胆预测一下，链家地产的“天外飞仙”应该是构建房产O2O的闭环，而如今实现的方式就是以线下反哺线上。</p>
+<p>自如是链家集团旗下互联网租房O2O第一品牌，其将链家地产的线下房源优势与线上的信息结合，形成以房产为核心的多重服务内容。此前自如CEO耿华军表示，自如是用O2O的方式改造传统行业的典型代表，把房子按自如标准统一装修，通过互联网渠道租出去，给客户提供相应的保洁维修服务，通过互联网完成。此外还能够组织包括线下相亲等活动，这是O2O基础上的向外辐射内容。</p>
+<p>链家的房产O2O“天外飞仙”是一套O2O的线上线下体系，优势在于，第一，将线上的自如品牌建立起完善的信息获取、查询、交易的初次购买形式；第二，将自己多年来线下门店的优势与线上进行结合，用户的“最后一公里”就是到店形式，方便实地查询和了解；第三，辐射周边O2O市场，正如自如CEO耿华军描述的情形，笔者也认同，房产O2O是一个建立核心诉求，然后可以无限延伸和辐射其他服务的服务生态体系。</p>
+<p>&nbsp;</p>
+<p><strong>房产O2O，高手该怎么做好线上到线下的闭环</strong></p>
+<p>不论是将线上优势积累多年的58同城、安居客等，还是线下门店众多的链家地产，其都在向自己原有的弱点进行补强，构建Online到Offline的闭环生态系统。应该如何做到呢，至少做到以下三点：</p>
+<p><strong>1.线上优势向线下渗透。</strong></p>
+<p>这是房产O2O这个大体量市场中，创业者有可能做到的第一点是互联网公司精于线上信息、资源和互联网的多样化服务内容，可以很快将大用户量短暂完成聚集，并且提供具体、丰富的信息内容，比如房产O2O领域的租房信息，可以提供房源信息、需求者的位置、个性需求等内容，然后通过这些信息形成线下的多样化服务，比如为达成租赁者提供58到家服务，保洁、美业等个性化服务，这都是建立在房屋租赁基础上的内容延伸服务。</p>
+<p><strong>2.线下资源到线上的反哺。</strong></p>
+<p>这是针对线下优势的企业而言，此前包括SOHO中国、万科等多年从事房地产租售的开发商，都在将自己线下的优势反哺到线上，SOHO中国董事长潘石屹更是要用O2O和<span class='wp_keywordlink'></span>来实现在租赁方面提振SOHO中国的疲态，万科总裁郁亮先后拜访阿里巴巴、腾讯、小米和百度进行学习互联网思维，就是传统企业的一种突破和思维大转变。</p>
+<p>这种方式适用于大体量的传统房地产企业的方式，链家此前已经在北京建立起数百家门店，然后将自己的优势与自如品牌结合，将这样的房屋租赁O2O形势变成一种颠覆性的模式。</p>
+<p><strong>3.Online与Offline形成双循环生态闭环系统。</strong></p>
+<p>O2O的线上到线下形成结合，只是第一步，也就是一个正向的服务内容的简单完成过程，而房产O2O是一个交易、服务，以及社交的体系过程，比如当租赁双方产生了供需要求，完成交易之后，租赁方此后还需要多样化的服务，比如保洁、家政、美甲、生鲜配送、外卖等，这些都能够通过O2O服务构建起来，如果将用户的某种需求为基础，比如旅行、相亲或者是聚会等成为社交活动的基础，形成辐射整个社区的群体需求，那么整个房产O2O背后拥有万亿价值，并不为过。</p>
+<p>&nbsp;</p>
+<div class="pages"></div>
+<div id="footer">
+<div class="shell" style="margin-bottom:0; border:1px solid #508800; width:620px; background-color:#edffd3; clear:both;">
+<p style="font-size:12px; color:#4d4d4d; margin:0 15px; padding:0; line-height:3em;">非特殊说明，本文为本站原创（翻译）文章，转载请注明：本文转自：模板无忧。</p>
+<div style="position:relative; height:0; line-height:0;">
+<img id="dimension_weibo" src="/skin/weibo.jpg" style="display:none; position:absolute; left:20px; top:-150px; z-index:99;"><br>
+<img id="dimension_weixin" src="/skin/weixin.jpg" style="display:none; position:absolute; left:220px; top:-150px; z-index:99;">
+</div><!--鼠标经过二维码结束-->
+<ul style="margin:5px 0; padding:0; overflow:hidden;">
+<li onClick="window.open(&#39;#&#39;)" style="list-style:none; cursor:pointer; float:left; width:206px;  repeat-y right top; margin:10px 0 0 0;" onMouseOver="document.getElementById(&#39;dimension_weibo&#39;).style.display=&#39;block&#39;" onMouseOut="document.getElementById(&#39;dimension_weibo&#39;).style.display=&#39;none&#39;;">
+<div style="background:url(&#39;/skin/footer_pic.png&#39;) no-repeat 0 0; width:50px; height:50px; float:left; margin:5px 15px;"></div>
+<div class="footer_content">
+<p style="font-weight:bold; font-size:14px; color:#4d4d4d; margin:0; padding:0; ">官方微博</p>
+<p style="font-size:12px; color:#999; margin:0; line-height:1.5em; padding:0;"><span class="wp_keywordlink_affiliate"><a href="#" target="_blank">@微博账号</a></span><br>发布干货与官方活动</p>
+<p></p></div>
+</li>
+<li style="list-style:none; cursor:pointer; float:left; width:210px; repeat-y right top; margin:10px 0 0 0;" onMouseOver="document.getElementById(&#39;dimension_weixin&#39;).style.display=&#39;block&#39;" ;="" onMouseOut="document.getElementById(&#39;dimension_weixin&#39;).style.display=&#39;none&#39;;">
+<div style="background:url(&#39;/skin/footer_pic.png&#39;) no-repeat -55px 0; width:50px; height:50px; float:left; margin:5px 15px 5px 10px;"></div>
+<div class="footer_content">
+<p style="font-weight:bold; font-size:14px; color:#4d4d4d; margin:0; padding:0; ">官方微信</p>
+<p style="font-size:12px; color:#999; margin:0; line-height:1.5em; padding:0;">名称：微信名称<br>微信号：微信账号</p>
+<p></p></div>
+</li>
+<li onClick="window.open(&#39;#39;)" style="list-style:none; cursor:pointer; float:left; width:202px; background:none; margin:10px 0 0 0;">
+<div style="background:url(&#39;/skin/footer_pic.png&#39;) no-repeat -110px 0; width:50px; height:50px; float:left; margin:5px 15px 5px 10px;"></div>
+<div class="footer_content">
+<p style="font-weight:bold; font-size:14px; color:#4d4d4d; margin:0; padding:0; ">官方QQ群</p>
+<p style="font-size:12px; color:#999; margin:0; line-height:1.5em; padding:0;">QQ群:1234567<br>交流与学习织梦建站</p>
+<p></p></div>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="share-post">
+<span class="share-text">分享</span>
+<ul>
+<li style="width:300px;margin-top:-7px">
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</li></ul>
+<div class="clear"></div>
+</div>
+</div>
+</article>
+<p class="post-tag">标签：
+
+</p>		
+<!--ad开始-->
+<div class="ads-post">					
+<a href="http://www.hymfx.com/" title="模板无忧广告位" target="_blank">
+<img src="/skin/ad06.jpg" alt="模板无忧广告位">
+</a>	
+</div>	<!--ad结束-->		
+<div class="post-navigation">
+<div class="post-previous">上一篇：<a href='/opinion/20150303/361.html'>如果索尼缺席2020年的MWC展，请无须惊讶</a> </div>
+<div class="post-next">下一篇：<a href='/opinion/20150303/363.html'>华为MWC“三箭齐发”，难掩海思芯片困境</a> </div>
+</div><!-- 上下篇结束 -->
+<section class="cat-box recent-box">
+<div class="cat-box-title">
+<h2>您可能喜欢</h2>
+<div class="stripe-line"></div>
+</div>
+<div class="cat-box-content">
+<div class="recent-item">		
+<div class="post-thumbnail" style="height:93px;overflow:hidden;">
+<a href="/opinion/20150303/356.html" title="面对内忧外患，三星靠S6能够力挽狂澜吗？?" target="_blank">				
+<img src="/uploads/allimg/c150303/14253ZA2630-15209.jpg" alt="?面对内忧外患，三星靠S6能够力挽狂澜吗？">
+  <span class="overlay-icon"></span>
+</a>
+</div>
+<h3><a href="/opinion/20150303/356.html" title="?面对内忧外患，三星靠S6能够力挽狂澜吗？" target="_blank">?面对内忧外患，三星靠S6能够力挽狂澜吗？</a></h3>
+<p class="post-meta">
+2015年03月03日 		查看：	28 		</p>
+</div>
+<div class="recent-item">		
+<div class="post-thumbnail" style="height:93px;overflow:hidden;">
+<a href="/opinion/20140503/260.html" title="三家运营商共建铁塔公司，网业分离的前兆？?" target="_blank">				
+<img src="/uploads/allimg/c140503/13c10Y01110-3I06_lit.jpg" alt="?三家运营商共建铁塔公司，网业分离的前兆？">
+  <span class="overlay-icon"></span>
+</a>
+</div>
+<h3><a href="/opinion/20140503/260.html" title="?三家运营商共建铁塔公司，网业分离的前兆？" target="_blank">?三家运营商共建铁塔公司，网业分离的前兆？</a></h3>
+<p class="post-meta">
+2014年05月03日 		查看：	0 		</p>
+</div>
+<div class="recent-item">		
+<div class="post-thumbnail" style="height:93px;overflow:hidden;">
+<a href="/opinion/20150303/365.html" title="马云谈创业：从没遇上现在的机会，我们在经历一次释?" target="_blank">				
+<img src="/uploads/allimg/c150303/14253ZB5E0-5N35.jpg" alt="?马云谈创业：从没遇上现在的机会，我们在经历一次释">
+  <span class="overlay-icon"></span>
+</a>
+</div>
+<h3><a href="/opinion/20150303/365.html" title="?马云谈创业：从没遇上现在的机会，我们在经历一次释" target="_blank">?马云谈创业：从没遇上现在的机会，我们在经历一次释</a></h3>
+<p class="post-meta">
+2015年03月03日 		查看：	1 		</p>
+</div>
+<div class="recent-item">		
+<div class="post-thumbnail" style="height:93px;overflow:hidden;">
+<a href="/opinion/20150303/360.html" title="神州专车25亿补贴：步子迈的太大，只会一条道走到黑?" target="_blank">				
+<img src="/uploads/allimg/c150303/14253ZAK0-62355.jpg" alt="?神州专车25亿补贴：步子迈的太大，只会一条道走到黑">
+  <span class="overlay-icon"></span>
+</a>
+</div>
+<h3><a href="/opinion/20150303/360.html" title="?神州专车25亿补贴：步子迈的太大，只会一条道走到黑" target="_blank">?神州专车25亿补贴：步子迈的太大，只会一条道走到黑</a></h3>
+<p class="post-meta">
+2015年03月03日 		查看：	0 		</p>
+</div>
+<div class="recent-item">		
+<div class="post-thumbnail" style="height:93px;overflow:hidden;">
+<a href="/opinion/20150303/364.html" title="《穹顶之下》是柴静的一个视频“爆款”?" target="_blank">				
+<img src="/uploads/allimg/c150303/14253ZB3630-4N92.jpg" alt="?《穹顶之下》是柴静的一个视频“爆款”">
+  <span class="overlay-icon"></span>
+</a>
+</div>
+<h3><a href="/opinion/20150303/364.html" title="?《穹顶之下》是柴静的一个视频“爆款”" target="_blank">?《穹顶之下》是柴静的一个视频“爆款”</a></h3>
+<p class="post-meta">
+2015年03月03日 		查看：	0 		</p>
+</div>
+<div class="recent-item">		
+<div class="post-thumbnail" style="height:93px;overflow:hidden;">
+<a href="/opinion/20140503/265.html" title="LinkedIn2014第一季度净亏1340万美元?" target="_blank">				
+<img src="/uploads/allimg/c140503/13c10Y10J0-34326_lit.jpg" alt="?LinkedIn2014第一季度净亏1340万美元">
+  <span class="overlay-icon"></span>
+</a>
+</div>
+<h3><a href="/opinion/20140503/265.html" title="?LinkedIn2014第一季度净亏1340万美元" target="_blank">?LinkedIn2014第一季度净亏1340万美元</a></h3>
+<p class="post-meta">
+2014年05月03日 		查看：	0 		</p>
+</div>
+
+      
+          <div class="clear"></div>
+</div>
+</section>		
+<!--兼容版，可保证页面完全兼容-->
+<!--兼容版，可保证页面完全兼容-->
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrtiGimP',
+    conf = 'prod_afd47c4a21d8330cde2a76c1567c8d31';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+  })()
+</script>
+<!-- Comment END -->
+</div> 
+<!--边栏开始-->
+<aside id="sidebar">
+	<!--ad开始-->
+				<div class="text-html-box">
+			<a href="http://www.hymfx.com/" title="模板无忧广告位" target="_blank">
+				<img src="/skin/ps.jpg"></a>		<a href="http://www.hymfx.com/" title="模板无忧广告位" target="_blank">
+				<img src="/skin/ad02.jpg"></a>				</div>
+				<!--ad结束-->
+<div class="widget categort-posts">
+	<div class="widget-top"><h4>热门点击</h4><div class="stripe-line"></div></div>
+						<div class="widget-container">
+							<ul>	
+	<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20150303/356.html" title="面对内忧外患，三星靠S6能够力挽狂澜吗？">
+			<img src="/uploads/allimg/c150303/14253ZA2630-15209.jpg" alt="面对内忧外患，三星靠S6能够力挽狂澜吗？" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20150303/356.html">面对内忧外患，三星靠S6能够力挽狂澜吗？</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140614/310.html" title="线下渠道沉淀，阿里要断京东念头">
+			<img src="/uploads/allimg/c140503/13c10Y0260-4b26.jpg" alt="线下渠道沉淀，阿里要断京东念头" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140614/310.html">线下渠道沉淀，阿里要断京东念头</a></h3>
+	 <span class="date">2014年06月14日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/262.html" title="传阿里巴巴回购支付宝1/3股权，为提升未来估值？">
+			<img src="/uploads/allimg/c140503/13c10Y042F-54239_lit.jpg" alt="传阿里巴巴回购支付宝1/3股权，为提升未来估值？" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/262.html">传阿里巴巴回购支付宝1/3股权，为提升未来估值？</a></h3>
+	 <span class="date">2014年05月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/271.html" title="神马都要互联网思维：跟“肉夹馍”学微营销">
+			<img src="/uploads/allimg/c140503/13c10Y20520-4b16_lit.jpg" alt="神马都要互联网思维：跟“肉夹馍”学微营销" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/271.html">神马都要互联网思维：跟“肉夹馍”学微营销</a></h3>
+	 <span class="date">2014年05月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/258.html" title="营改增的大政策，将对电信运营商产生连锁反应">
+			<img src="/uploads/allimg/c140503/13c10Xa460-1D63_lit.jpg" alt="营改增的大政策，将对电信运营商产生连锁反应" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/258.html">营改增的大政策，将对电信运营商产生连锁反应</a></h3>
+	 <span class="date">2014年05月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/261.html" title="移动搜索被重新“洗牌”，有那么容易吗？">
+			<img src="/uploads/allimg/c140503/13c10Y0260-4b26_lit.jpg" alt="移动搜索被重新“洗牌”，有那么容易吗？" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/261.html">移动搜索被重新“洗牌”，有那么容易吗？</a></h3>
+	 <span class="date">2014年05月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/263.html" title="索尼难觅复苏迹象，遭遇六年中第五次净亏损">
+			<img src="/uploads/allimg/c140503/13c10Y0I50-1F54_lit.jpg" alt="索尼难觅复苏迹象，遭遇六年中第五次净亏损" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/263.html">索尼难觅复苏迹象，遭遇六年中第五次净亏损</a></h3>
+	 <span class="date">2014年05月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20150303/357.html" title="内容+接触点+关系：你只看到社会化营销的冰山一角">
+			<img src="/uploads/allimg/c150303/14253ZA3I0-23027.jpg" alt="内容+接触点+关系：你只看到社会化营销的冰山一角" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20150303/357.html">内容+接触点+关系：你只看到社会化营销的冰山一角</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20150303/362.html" title="58安居客与链家德佑两大阵营的房产O2O对决">
+			<img src="/uploads/allimg/c150303/14253ZB130-24964.jpg" alt="58安居客与链家德佑两大阵营的房产O2O对决" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20150303/362.html">58安居客与链家德佑两大阵营的房产O2O对决</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20150303/365.html" title="马云谈创业：从没遇上现在的机会，我们在经历一次释">
+			<img src="/uploads/allimg/c150303/14253ZB5E0-5N35.jpg" alt="马云谈创业：从没遇上现在的机会，我们在经历一次释" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20150303/365.html">马云谈创业：从没遇上现在的机会，我们在经历一次释</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+
+				</ul>
+		<div class="clear"></div>
+	</div></div>
+<div class="text-html-box" style="text-align:center;">
+				</div>
+				<!-- ad开始-->		
+			<div class="text-html-box">
+	<a href="http://www.hymfx.com/" title="模板无忧广告位" target="_blank">
+				<img src="/skin/ad03.jpg"></a>				</div>
+				<!-- ad结束-->		
+<div class="widget categort-posts">
+	<div class="widget-top"><h4>推荐资讯</h4><div class="stripe-line"></div></div>
+						<div class="widget-container">
+							<ul>	
+	<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/268.html" title="十年耕耘一朝消亡：饭统网是这样衰落的">
+			<img src="/uploads/allimg/c140503/13c10Y15O0-16431_lit.png" alt="十年耕耘一朝消亡：饭统网是这样衰落的" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/268.html">十年耕耘一朝消亡：饭统网是这样衰落的</a></h3>
+	 <span class="date">2014年05月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/258.html" title="营改增的大政策，将对电信运营商产生连锁反应">
+			<img src="/uploads/allimg/c140503/13c10Xa460-1D63_lit.jpg" alt="营改增的大政策，将对电信运营商产生连锁反应" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/258.html">营改增的大政策，将对电信运营商产生连锁反应</a></h3>
+	 <span class="date">2014年05月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/263.html" title="索尼难觅复苏迹象，遭遇六年中第五次净亏损">
+			<img src="/uploads/allimg/c140503/13c10Y0I50-1F54_lit.jpg" alt="索尼难觅复苏迹象，遭遇六年中第五次净亏损" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/263.html">索尼难觅复苏迹象，遭遇六年中第五次净亏损</a></h3>
+	 <span class="date">2014年05月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20150303/357.html" title="内容+接触点+关系：你只看到社会化营销的冰山一角">
+			<img src="/uploads/allimg/c150303/14253ZA3I0-23027.jpg" alt="内容+接触点+关系：你只看到社会化营销的冰山一角" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20150303/357.html">内容+接触点+关系：你只看到社会化营销的冰山一角</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/271.html" title="神马都要互联网思维：跟“肉夹馍”学微营销">
+			<img src="/uploads/allimg/c140503/13c10Y20520-4b16_lit.jpg" alt="神马都要互联网思维：跟“肉夹馍”学微营销" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/271.html">神马都要互联网思维：跟“肉夹馍”学微营销</a></h3>
+	 <span class="date">2014年05月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140614/310.html" title="线下渠道沉淀，阿里要断京东念头">
+			<img src="/uploads/allimg/c140503/13c10Y0260-4b26.jpg" alt="线下渠道沉淀，阿里要断京东念头" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140614/310.html">线下渠道沉淀，阿里要断京东念头</a></h3>
+	 <span class="date">2014年06月14日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20150303/361.html" title="如果索尼缺席2020年的MWC展，请无须惊讶">
+			<img src="/uploads/allimg/c150303/14253ZB00-1GV.jpg" alt="如果索尼缺席2020年的MWC展，请无须惊讶" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20150303/361.html">如果索尼缺席2020年的MWC展，请无须惊讶</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20150303/359.html" title="三星入局移动支付混战：谷歌苹果三星沃尔玛Paypal谁">
+			<img src="/uploads/allimg/c150303/14253ZA63Z-5XZ.jpg" alt="三星入局移动支付混战：谷歌苹果三星沃尔玛Paypal谁" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20150303/359.html">三星入局移动支付混战：谷歌苹果三星沃尔玛Paypal谁</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/260.html" title="三家运营商共建铁塔公司，网业分离的前兆？">
+			<img src="/uploads/allimg/c140503/13c10Y01110-3I06_lit.jpg" alt="三家运营商共建铁塔公司，网业分离的前兆？" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/260.html">三家运营商共建铁塔公司，网业分离的前兆？</a></h3>
+	 <span class="date">2014年05月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/269.html" title="钢铁电商金融供应链整合之路：机遇与挑战并存">
+			<img src="/uploads/allimg/c140503/13c10Y1M50-253G_lit.jpg" alt="钢铁电商金融供应链整合之路：机遇与挑战并存" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/269.html">钢铁电商金融供应链整合之路：机遇与挑战并存</a></h3>
+	 <span class="date">2014年05月03日</span>
+</li>
+
+		
+				</ul>
+		<div class="clear"></div>
+	</div></div>
+<!-- ad开始-->		
+			<div class="text-html-box">
+	<a href="http://www.hymfx.com/" title="模板无忧广告位" target="_blank">
+				<img src="/skin/ad04.jpg"></a>				</div>
+				<!-- ad结束-->	
+				<div class="widget categort-posts">
+	<div class="widget-top"><h4>你可能感兴趣的</h4><div class="stripe-line"></div></div>
+						<div class="widget-container">
+							<ul>	
+	<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/269.html" title="钢铁电商金融供应链整合之路：机遇与挑战并存">
+			<img src="/uploads/allimg/c140503/13c10Y1M50-253G_lit.jpg" alt="钢铁电商金融供应链整合之路：机遇与挑战并存" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/269.html">钢铁电商金融供应链整合之路：机遇与挑战并存</a></h3>
+	 <span class="date">2014年05月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/264.html" title="“网业分离”？效率，垄断与消费者利益">
+			<img src="/uploads/allimg/c140503/13c10Y0Z60-24529_lit.jpg" alt="“网业分离”？效率，垄断与消费者利益" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/264.html">“网业分离”？效率，垄断与消费者利益</a></h3>
+	 <span class="date">2014年05月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20150303/358.html" title="李开复回归首谈五年趋势：万物互联，95后将是指标性">
+			<img src="http://www.tmtpost.com/wp-content/uploads/2013/06/李开复-200x150.jpg" alt="李开复回归首谈五年趋势：万物互联，95后将是指标性" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20150303/358.html">李开复回归首谈五年趋势：万物互联，95后将是指标性</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20150303/360.html" title="神州专车25亿补贴：步子迈的太大，只会一条道走到黑">
+			<img src="/uploads/allimg/c150303/14253ZAK0-62355.jpg" alt="神州专车25亿补贴：步子迈的太大，只会一条道走到黑" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20150303/360.html">神州专车25亿补贴：步子迈的太大，只会一条道走到黑</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20150303/356.html" title="面对内忧外患，三星靠S6能够力挽狂澜吗？">
+			<img src="/uploads/allimg/c150303/14253ZA2630-15209.jpg" alt="面对内忧外患，三星靠S6能够力挽狂澜吗？" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20150303/356.html">面对内忧外患，三星靠S6能够力挽狂澜吗？</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20150303/365.html" title="马云谈创业：从没遇上现在的机会，我们在经历一次释">
+			<img src="/uploads/allimg/c150303/14253ZB5E0-5N35.jpg" alt="马云谈创业：从没遇上现在的机会，我们在经历一次释" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20150303/365.html">马云谈创业：从没遇上现在的机会，我们在经历一次释</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/270.html" title="“3百大战”续集上演，“神马”来袭？">
+			<img src="/uploads/allimg/c140503/13c10Y192F-35Y2_lit.jpg" alt="“3百大战”续集上演，“神马”来袭？" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/270.html">“3百大战”续集上演，“神马”来袭？</a></h3>
+	 <span class="date">2014年06月14日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/263.html" title="索尼难觅复苏迹象，遭遇六年中第五次净亏损">
+			<img src="/uploads/allimg/c140503/13c10Y0I50-1F54_lit.jpg" alt="索尼难觅复苏迹象，遭遇六年中第五次净亏损" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/263.html">索尼难觅复苏迹象，遭遇六年中第五次净亏损</a></h3>
+	 <span class="date">2014年05月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20150303/363.html" title="华为MWC“三箭齐发”，难掩海思芯片困境">
+			<img src="/uploads/allimg/c150303/14253ZB23P-3SI.jpg" alt="华为MWC“三箭齐发”，难掩海思芯片困境" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20150303/363.html">华为MWC“三箭齐发”，难掩海思芯片困境</a></h3>
+	 <span class="date">2015年03月03日</span>
+</li>
+<li>
+		<div class="post-thumbnail">
+			<a href="/opinion/20140503/268.html" title="十年耕耘一朝消亡：饭统网是这样衰落的">
+			<img src="/uploads/allimg/c140503/13c10Y15O0-16431_lit.png" alt="十年耕耘一朝消亡：饭统网是这样衰落的" width="80" height="50"></a>
+		</div>
+	<h3><a href="/opinion/20140503/268.html">十年耕耘一朝消亡：饭统网是这样衰落的</a></h3>
+	 <span class="date">2014年05月03日</span>
+</li>
+
+				</ul>
+		<div class="clear"></div>
+	</div></div>
+		<!-- ad开始-->		
+			<div class="text-html-box">
+	<a href="http://www.hymfx.com/" title="模板无忧广告位" target="_blank">
+				<img src="/skin/ad05.jpg"></a>				</div>
+				<!-- ad结束-->							
+	</aside>		
+<!--边栏结束-->
+<div class="clear"></div>
+</div>
+<!--footer开始-->
+
+<footer>
+  <div id="footer-widget-area" class="wide-left-3c">
+    <div id="footer-first" class="footer-widgets-box">
+      <div class="footer-widget text-html">
+        <div class="footer-widget-top">
+          <h4>友情链接</h4>
+        </div>
+        <div class="footer-widget-container">
+          <div>
+            <ul>
+            <li><a href='http://www.dedecms.com' target='_blank'>织梦CMS</a> </li><li><a href='http://www.baidu.com' target='_blank'>今日头条</a> </li><li><a href='http://www.baidu.com' target='_blank'>创想拍</a> </li><li><a href='http://www.baidu.com' target='_blank'>创业家</a> </li><li><a href='http://www.baidu.com' target='_blank'>搜狐新闻</a> </li><li><a href='http://www.baidu.com' target='_blank'>证券之星</a> </li><li><a href='http://www.mb5u.com' target='_blank'>CMStop</a> </li><li><a href='http://www.baidu.com' target='_blank'>科技快报</a> </li>
+              
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-second" class="footer-widgets-box">
+      <div id="author-bio-widget-2" class="footer-widget Author-Bio">
+        <div class="footer-widget-top">
+          <h4>关于我们</h4>
+        </div>
+        <div class="footer-widget-container">
+          <div class="author-description"> 站窝窝以提供分享网页模板及建站常用素材资源教程为宗旨，内容涉及: 设计类，办公类，美术类等基于计算机数字影像和数字艺术领域方面，
+模板无忧将向着共享化、全面化、专业化、深度化、免费化的多元方向发展，打造实用快捷的功能模块，为会员及用户提供高质量的服务。 </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-third" class="footer-widgets-box">
+      <div id="author-bio-widget-3" class="footer-widget Author-Bio">
+        <div class="footer-widget-top">
+          <h4>扫码关注微信</h4>
+        </div>
+        <div class="footer-widget-container">
+          <div class="author-avatar"> <img alt="" src="/skin/weixin.jpg"> </div>
+          <div class="author-description"> </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</footer>
+<div class="clear"></div>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="alignleft"> 站窝窝-备案号 渝ICP备88888888  |
+
+<a href="/about/gywm/" target="_blank" title="">关于我们</a> |   
+
+<a href="/about/xxqbd/" target="_blank" title="">寻求报道</a> |   
+
+<a href="/about/swhz/" target="_blank" title="">商务合作</a> |   
+
+<a href="/about/bqsm/" target="_blank" title="">版权申明</a> |   
+
+<a href="/about/lxwm/" target="_blank" title="">联系我们</a> |   
+ 
+</div>
+  </div>
+</div>
+<div id="topcontrol" style="opacity: 0.02325625000000009; ">回到顶部</div>
+
+<!--footer结束-->	
+</div>
+</body></html>

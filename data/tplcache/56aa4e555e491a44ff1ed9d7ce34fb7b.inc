@@ -1,0 +1,1 @@
+<li style="max-width: 20%; width: 16.666666666666668%; "><a href="[field:arcurl/]">[field:title/]</a> <img src="[field:litpic/]"></li>

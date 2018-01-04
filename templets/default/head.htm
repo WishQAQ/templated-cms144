@@ -1,0 +1,39 @@
+<div class="mytop">
+<h1><a href="{dede:global.cfg_basehost/}" class="logo">{dede:global.cfg_webname/}</a></h1>
+<div class="hf"><script src='/plus/ad_js.php?aid=2' language='javascript'></script></div>
+<div class="sc">
+<ul>
+<li><a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{dede:global.cfg_basehost/}');">设为首页</a></li>
+<li><a href="javascript:window.external.AddFavorite('{dede:global.cfg_basehost/}','{dede:global.cfg_webname/}')">加入收藏</a></li>
+<li><a href="{dede:global.cfg_basehost/}/sitemap.xml">网站地图</a></li>
+</ul>
+</div>
+</div>
+<div class="mynav">
+<div class="dh">
+<ul>
+<li class="home"><a href='{dede:global.cfg_basehost/}'>首 页</a> </li>
+{dede:channel type='top'  currentstyle="<li><a href='~typelink~' class='cur'>~typename~</a> </li>"}
+<li><a href='[field:typelink/]'>[field:typename/]</a> </li>
+{/dede:channel}
+</ul>
+</div>
+</div>
+<div class="home">
+<div class="fdh">
+<div class="rmc">
+<p>
+<span>标签:</span>
+{dede:tag sort='rand' getall='1' row='12'}
+<a href='[field:link/]'>[field:tag /]</a>
+{/dede:tag}</p>
+</div>
+<div class="ss">
+<ul class="soso">
+<form class="sou" method="post" name="search" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+<input type="text" id="kuang" value="" name="keyword"class="swap_value" /> 
+<input type="image"  src="{dede:global.cfg_templets_skin/}/images/so.gif" width="33" height="24" class="go" alt="搜素" title="搜索">
+</form>
+</ul>
+</div>
+</div>

@@ -1,0 +1,85 @@
+/***
+ *	
+本手机网站由小菜设计并制作！
+小菜说：www.xiaocaishuo.com
+ **/
+ 
+/*---------- base ---------*/
+*{padding:0px;margin:0px;}
+html{background:#FFF;}
+body{font:100%/1.6em Helvetica, Arial, sans-serif;}
+img{border:none;max-width: 100%; margin:0 auto}
+a{color:#256EB1;text-decoration:none;}
+a:hover{color:#ba2636;text-decoration:underline;}
+a:visited,a:focus{color:#256EB1;}
+ul,li{list-style:none;}
+input,select,button{vertical-align:middle;}
+h1{ font-size:1.25em; font-weight:bold; text-align:center; line-height:1.2em; padding:5% 0}
+h2{ font-size:1.15em; font-weight:normal; line-height:40px; white-space:nowrap; overflow:hidden}
+h3{ background:url(images/bgs.png) repeat-x; height:2em; line-height:2em; font-weight: normal;text-indent:1%; font-size:1.2em; color:#ffffff}
+h3 a,h3 a:visited{ font-size:1em; color:#ffffff}
+.fullwidth{width:100%}
+.fl{ float:left}
+.fr{ float:right}
+.mt1{margin-top:0.5em;}
+.pd10{ padding:0 1%;}
+.clear{overflow:hidden;}
+.fc-f60{color:#F60;}
+.fc-f90{color:#F90;}
+.clr{clear:both;}
+header{ background:url(images/nav-bg.png) repeat-x; height:40px; width:100%; position:relative;color:#ffffff;z-index: 999;}
+header a,header a:visited,header a:focus{ color:#ffffff}
+header .webname{ font-size:1.1em; color:#ffffff; line-height:40px; text-align:center; font-weight:bold}
+header .home{  position:absolute;left:5px; top:8px; padding:3px 8px 3px 3px; display:block; width:20px; height:17px;background:url("images/home.png") no-repeat center center  #111; border:1px solid #333333; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px;}
+header .catebar{position:absolute;right:5px; top:8px; width:30px; height:17px; line-height:17px; font-size:12px; padding:3px 8px 3px 28px;background:url(images/list-icons.png) 0 center no-repeat #111; border:1px solid #333333; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; color:#ffffff;}
+header nav{ background:#444444; padding:10px; }
+header nav a{ border-bottom:1px solid #333333; height:2em; line-height:2em; display:block; width:100%}
+.flexslider .slides li {display: none;}
+.flexslider .slides img {width: 100%; display: block;}
+
+.flexslider {background: #fff; position: relative;z-index: 1;}
+.flexslider .slides  li {position: relative;}
+.flexslider-container {position: relative;}
+.flex-caption {width: 96%; padding: 2%; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,.3); color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 15px; line-height: 18px;}
+.flex-direction-nav li a {width: 52px; height: 52px; margin: -13px 0 0; display: block; background: url(images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; display:none}
+.flex-direction-nav li a.next {background-position: -52px 0; right: -21px;}
+.flex-direction-nav li a.prev {background-position: 0 0; left: -21px;}
+.flex-control-nav { position: absolute; bottom: 5%; right:5%;} 
+.flex-control-nav li {margin: 0 0 0 5px; float: left;}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a {width: 13px; height: 13px; display: block; background: url(images/bg_control_nav.png) no-repeat 0 0; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover {background-position: 0 -13px;}
+.flex-control-nav li a.active {background-position: 0 -26px; cursor: default;}
+
+.wrapper{width: 99%;margin:0 auto;}
+.hotfoucs{ clear:both; background:#f5f5f5}
+.toutiao{background:#FFFFFF;border-bottom: 1px dotted #CCCCCC;padding-bottom: 3%;}
+.toutiao .cont{}
+.hotfoucs img{ width:35%; margin-right:2%; display:block}
+.hotfoucs p{ color:#666666; line-height:1.32em; font-size:1.1em}
+.sublist{ background:#f8f8f8; margin:1%; padding:1%; font-size:1em;}
+.sublist a{ background:#232323; color:#ffffff; padding:5px 10px}
+.list1 li{border-bottom: 1px solid #E4E4E4;line-height: 2.5em; font-size:1.2em }
+.list1 li a{}
+.list1 li span{ color:#888888;  font-size:0.7em}
+.list2{}
+.list2 li{ float:left; width:33.1%; margin:2% 0;}
+.list2 li a{display: block; text-align:center; margin:0 auto; width:90%; overflow:hidden; white-space:nowrap; position:relative;}
+.list2 li span{ position:absolute;background: rgba(0,0,0,.6); color: #fff; height:1.5em; line-height:1.5em; font-size:0.8em; width:100%; left:0; bottom:0; padding:0 2%}
+.list2 li img{ display:block; width:100%; max-height:100px; }
+.pagelistbox{ padding:0 1%; margin:2% 0;clear:both}
+.pagelistbox a,.pagelistbox strong{ border:1px solid #dddddd; padding:0 5px; height:1.56em; margin-right:1%; display: inline-block}
+.pagelistbox strong{ background:#256EB1; border:1px solid #256EB1; color:#ffffff}
+.pagelistbox a:visited{ color:#256EB1}
+article .content{ color:#555555; background:#fefefe}
+article .info{ border-bottom:1px dotted #cccccc; color:#666666; background:#f6f6f6; font-size:0.8em; padding:0.2em}
+article .content{ padding:5% 0; text-indent:2em}
+article .content img{ display:block}
+article .content .tags{ text-align:right; font-size:0.8em;}
+
+.backlist{ height:2em; line-height:2em; text-align:center; font-size:1em; background:#f3f3f3}
+.backlist a{ color:#ff0000}
+footer{ background:#232323; border-top:1px solid #dddddd; text-align:center; color:#FFF;clear:both; padding:0.5em; line-height:1.1em;}
+@media (max-width:320px){
+
+}

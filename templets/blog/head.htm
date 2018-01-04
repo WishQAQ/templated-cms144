@@ -1,0 +1,126 @@
+<script type="text/javascript">
+    var mobileUrl="/wap.php", 
+        mobile = (/mmp|symbian|smartphone|midp|wap|phone|xoom|iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+    if (mobile) {
+        window.location = mobileUrl;
+    }
+</script>
+
+<script type="text/javascript" src="/skin/jquery1.js"></script>
+<script type="text/javascript" src="/skin/common.js"></script>
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+
+	$(function(){
+		$("a[_for]").mouseover(function(){
+			$(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+			$(this).addClass("thisclass").blur();
+			$("#"+$(this).attr("_for")).show();
+		});
+		$("a[_for=uc_member]").mouseover();
+		$("a[_for=flink_1]").mouseover();
+	});
+	
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+</script>
+<header>
+<!-- 顶部菜单及搜索-->
+
+<div class="top-nav">
+<div class="midBox">
+<div class="top-menu">
+<ul class="menu">
+{dede:channel typeid='10' noself='yes' }
+<li><a href="[field:typelink/]" target="_blank" title="">[field:typename/]</a></li> 
+{/dede:channel} 
+<li><a href="/tags.php" target="_blank" title="">TAG标签</a></li> 
+
+</ul>
+</div>
+<!-- search-->
+<div class="search-block">
+<form method="get" id="searchform" action="/plus/search.php" target="_blank">
+<input class="search-button" type="submit" value="搜索">
+<input type="text" id="s" name="q" value="搜索..." onFocus="if (this.value == '搜索...') {this.value = '';}" onBlur="if (this.value == '') {this.value = '搜索...';}">
+</form>
+</div>
+</div>
+</div>
+<!-- 顶部菜单及搜索结束-->
+<div class="header-content">
+<div class="midBox">
+<div class="logo" style="margin-top:5px">
+<h1> <a title="模板无忧" href="/"> <img src="/skin/logo12.png" alt="模板无忧"><strong>模板无忧</strong> </a> </h1>
+</div>
+<!-- .logo /-->
+<div class="ads-top">
+<ul>
+<li style="float:left; width:80px; padding-top:20px"> <a href="/" target="_blank" title="新浪微博"> <img src="/skin/sina.png" alt="新浪微博"></a> </li>
+<li style="float:left; width:80px; padding-top:20px"> <a href="/" target="_blank" title="QQ空间"> <img src="/skin/qzone.png" alt="QQ空间"></a> </li>
+<li style="float:left; width:80px; padding-top:20px"> <a href="/" target="_blank" title="在线交谈"> <img src="/skin/qq.png" alt="在线交谈"></a> </li>
+</ul>
+</div>
+<!-- 关注图标结束-->
+<div class="clear"></div>
+</div>
+</div>
+<!-- 导航-->
+<nav id="main-nav" class="fixed-enabled">
+<div class="container">
+<div class="main-menu">
+<ul id="menu-main" class="menu">
+<li class="menu-item  menu-item-type-custom  menu-item-object-custom  current-menu-item  current_page_item  menu-item-home"> <a title="首页" href="/">模板无忧</a></li>
+{dede:channelartlist typeid='1,2,3,4,7'}
+<li class="menu-item mega-menu menu-item-type-taxonomy mega-menu menu-item-object-category mega-menu menu-item-has-children parent-list"> <a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}<span class="sub-indicator"></span></a><!-- 顶级栏目 -->
+<div class="mega-menu-block">
+<div class="mega-menu-content"> 
+<!-- 当前栏目带图头条 --> 
+{dede:arclist orderby='rand' row='3' titlelen='60' type='image'}
+<div class="mega-menu-item "> <a href="[field:arcurl/]" title="[field:title/]"> <img src="[field:litpic/]" width="235" height="117"></a>
+<h3 class="post-box-title"> <a class="mega-menu-link" href="[field:arcurl/]" title="[field:title/]">[field:title/]</a> </h3>
+</div>
+{/dede:arclist} 
+<!-- 当前栏目带图头条结束 --> 
+</div>
+<!--当前子栏目-->
+<ul class="sub-menu">
+{dede:channel type='son' noself='yes'}
+<li class="menu-item  menu-item-type-taxonomy  menu-item-object-category"> <a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:channel}
+</ul>
+<!--当前子栏目end--> 
+</div>
+</li>
+{/dede:channelartlist}
+<li class="menu-item mega-menu menu-item-type-taxonomy mega-menu menu-item-object-category mega-menu menu-item-has-children parent-list"> <a href="/about/">关于我们<span class="sub-indicator"></span></a></li>
+
+</ul>
+</div>
+
+<div class="action"> 
+<a href="/member/fx_cy.php" class="n1" target="_blank" title="投稿">投稿</a>
+<div class="userbar">
+
+<div id="_userlogin">
+<div class="user">
+<span class="avatar"><img src="/skin/symbol-25.png"></span>
+<a href="javascript:;" class="n4 head-username">账户</a>
+<ul class="drap">
+<li class="i3"><a href="/member/index_do.php?fmdo=user&dopost=regnew" title="注  册" class="head-register">注  册</a></li>
+<li class="i6"><a href="/member/login.php" class="head-login" title="登陆">登  陆</a></li>
+</ul>
+</div>
+</div>
+ <script language="javascript" type="text/javascript">CheckLogin();</script>
+</div>
+</div>
+
+</div>
+</nav>
+<!-- 导航结束--> 
+</header>

@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="{dede:global.cfg_basehost/}/skin/style/ningmp.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{dede:global.cfg_basehost/}/skin/js/jquery-1.3.1.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_basehost/}/skin/js/jquery.mwxs.js"></script> 
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div id="mainbox">
+<div class="focus">
+<div id="focus_img">
+<div class="nbox">
+{dede:arclist row=6  flag ='f' titlelen=30 infolen=130 orderby='pubdate' }
+<div class="focus_box">
+<div class="pbox">[field:imglink/]</div>
+<div class="descs">
+<a href="[field:arcurl/]" class="t">[field:title/]</a>
+<p class="intro">[field:info/]……<br></p>
+<p class="rmd_read">来自栏目：[field:typelink/] 的推荐<br/></p>
+</div>
+</div>
+{/dede:arclist}
+</div>
+</div>
+<div id="focus_links">
+<ul>
+<li class="act"><a href="javascript:void(0)"></a></li>
+<li ><a href="javascript:void(0)"></a></li>
+<li ><a href="javascript:void(0)"></a></li>
+<li ><a href="javascript:void(0)"></a></li>
+<li ><a href="javascript:void(0)"></a></li>
+<li ><a href="javascript:void(0)"></a></li>
+</ul>
+</div>
+</div></div>
+<div id="huany">
+<div class="tjnr2">
+<p>今日更新</p>
+<ul style="border-top:1px solid #5fb74b; padding-top:10px">
+{dede:arclist  row=6 titlelen=30 orderby='pubdate' }
+<li><a href='[field:arcurl/]'>[field:title/]</a></li>
+{/dede:arclist}
+</ul>
+</div></div>
+
+<div class="tsimg">
+<div class="tzpic">
+<dl>推荐图片</dl>
+<ul>
+{dede:arclist typeid=1,2,3,4,5,6,7,9 row=10 titlelen=20 orderby='pubdate' }
+  <li>[field:imglink/]</a>
+  <p><a href='[field:arcurl/]'>[field:title/]</a> </p></li>
+{/dede:arclist}
+</ul>
+</div>
+</div>
+<div class="ber"> <script src='/plus/ad_js.php?aid=4' language='javascript'></script></div>
+<div class="nrmk">
+{dede:arclist row=10 flag ='c' titlelen='40'}
+<div class="xnlist">
+   <div class="picxn">[field:imglink/]</div>
+  <div class="zwlist">
+  <ul>
+  <li><span>[field:pubdate function="GetDateTimeMK(@me)"/]</span><a href='[field:arcurl/]'>[field:title/]</a></li>
+  <p>[field:description/]...</p>
+  </ul>
+  </div>
+</div>
+{/dede:arclist}
+
+</div>
+<div class="nrmky">
+<div class="nrmk1">
+<script src='/plus/ad_js.php?aid=3' language='javascript'></script>
+</div>
+<div class="bqmk">
+<dl>热门标签</dl>
+<ul>
+{dede:tag row='45' getall='1' sort='hot'}
+<a href='[field:link/]' title="[field:tag /]([field:total /])" style="[field:total runphp=yes]@me=getTagStyle();[/field:total]">[field:tag /]</a>
+{/dede:tag} 
+</ul>
+</div>
+<div id=con>
+<ul id=tags>
+  <li><A onClick="selectTag('tagContent0',this)" href="javascript:void(0)">热门排行</A> </li>
+  <li class=selectTag><A onClick="selectTag('tagContent1',this)"  href="javascript:void(0)">本周热门</A> </li>
+  <li><A onClick="selectTag('tagContent2',this)"  href="javascript:void(0)">随机阅读</A> </li>
+  </ul>
+  <DIV id=tagContent>
+<DIV class=tagContent id=tagContent0>
+<ul>
+{dede:arclist row=10 titlelen=34 orderby='click' }
+<li><a href='[field:arcurl/]'>[field:title/]</a></li>
+{/dede:arclist}
+
+</ul>
+</DIV>
+<DIV class="tagContent selectTag" id=tagContent1>
+<ul>
+
+{dede:arclist row=10 titlelen=34 orderby='rand' }
+<li><a href='[field:arcurl/]'>[field:title/]</a></li>
+{/dede:arclist}
+</ul>
+</DIV>
+<DIV class=tagContent id=tagContent2>
+<ul>
+{dede:arclist row=10 titlelen=34 orderby='rand' }
+<li><a href='[field:arcurl/]'>[field:title/]</a></li>
+{/dede:arclist}
+</ul>
+</DIV></DIV></DIV>
+<p>
+  <SCRIPT type=text/javascript>
+function selectTag(showContent,selfObj){
+	// 操作标签
+	var tag = document.getElementById("tags").getElementsByTagName("li");
+	var taglength = tag.length;
+	for(i=0; i<taglength; i++){
+		tag[i].className = "";
+	}
+	selfObj.parentNode.className = "selectTag";
+	// 操作内容
+	for(i=0; j=document.getElementById("tagContent"+i); i++){
+		j.style.display = "none";
+	}
+	document.getElementById(showContent).style.display = "block";
+	
+	
+}
+</SCRIPT>
+</p>
+<p class="nrbt">点击排行</p>
+<div class="nrmk3">
+<ul>
+{dede:arclist row=10 titlelen=36 orderby='click' }
+<li><a href='[field:arcurl/]'>[field:title/]</a></li>
+{/dede:arclist}
+</ul>
+</div>
+<div class="nrmk2">
+<p>本周热门</p>
+<ul>
+{dede:arclist row=11 titlelen=36 orderby='rand' }
+<li><a href='[field:arcurl/]'>[field:title/]</a></li>
+{/dede:arclist}
+
+</ul>
+</div>
+</div>
+<div class="youl">
+<p>友情链接</p>
+<ul>
+ {dede:flink row='24'/}
+ 
+</ul>
+</div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="/skin/style/ningmp.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+{dede:include filename="head.htm"/}
+<div class="dangq">
+<ul>
+  <li>当前位置：{dede:field name='position'/}</li></ul>
+</div>
+<div class="artz2">
+<div class="artt">
+<p>{dede:field.mid runphp='yes'}
+    $id = @me;
+    if($id <> 0){
+        $sql = "select * from dede_member where mid = $id";
+        $query = mysql_query($sql);
+        $row = mysql_fetch_array($query);
+        if($row['face'] == ''){
+            @me = '<img src="/member/templets/images/dfboy.png" />';  
+        }  
+        else{  
+            $face = $row['face'];
+            @me = '<img src="'.$face.'" />';
+        }  
+    }  
+    else{  
+        @me = '游客发表';  
+    }  
+{/dede:field.mid}</p>
+</div>
+<div class="arzbt">
+<h2>{dede:field.title/}</h2>
+<p>发帖时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</p>
+<ul>
+<li>标签：{dede:tag row='30' sort='new' getall='0'} <a href='[field:link/]'>[field:tag /]</a>{/dede:tag}</strong></li>
+</ul>
+</div>
+<div class="arznn" style="padding:0 20px;">
+{dede:field.body/}
+</div>
+<div class="arfy"><ul class="jogger2">{dede:pagebreak/}</ul></div>
+<!-- //顶踩 -->
+<!-- //顶踩部份的源码结束 -->
+<div class="sxiap">
+<p>{dede:prenext get='pre'/}</p>
+<p>{dede:prenext get='next'/}</p>
+</div>
+<div class="arfx" style="width:678px;margin:0 0 0 15px;"><!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+<span class="bds_more">分享到：</span>
+<a class="bds_tsina">新浪微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_tqq">腾讯微博</a>
+<a class="bds_renren">人人网</a>
+<a class="bds_diandian">点点网</a>
+<a class="bds_copy">复制网址</a>
+<a class="bds_print">打印</a>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&uid=14477" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<!-- Baidu Button END --></div>
+<div style="padding:0 20px;">
+<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"{dede:global.cfg_duos/}"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->
+</div>
+<div class="arxg">
+<p>相关内容</p>
+<ul>
+{dede:arclist row=14 titlelen=30 orderby='rand' }
+<li><a href="[field:arcurl/]">[field:title/]</a></li>
+{/dede:arclist}
+</ul>
+</div>
+</div>
+<div class="listy">
+<div class="tjnr">
+<p>随机阅读</p>
+<ul style="border-top:1px solid #5fb74b; padding-top:10px">
+{dede:arclist row=14 titlelen=30 orderby='rand' }
+<li><a href="[field:arcurl/]">[field:title/]</a></li>
+{/dede:arclist}
+</ul>
+</div>
+
+<div class="nrmk1">
+ <script src='/plus/ad_js.php?aid=3' language='javascript'></script>
+</div>
+<p class="nrbt">热门排行</p>
+<div class="nrmk3">
+<ul>
+{dede:arclist row=10 titlelen=30 orderby='click' }
+<li><a href="[field:arcurl/]">[field:title/]</a></li>
+{/dede:arclist}
+</ul>
+</div>
+</div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

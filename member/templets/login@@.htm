@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>用户中心登录-无忧创意网（ies5.com）</TITLE>
+<META content=IE=7 http-equiv=X-UA-Compatible>
+<META content="text/html; charset=gbk" http-equiv=Content-Type><LINK 
+rel=stylesheet type=text/css href="/member/templets/images/css.css">
+<META name=GENERATOR content="MSHTML 8.00.6001.18702">
+</HEAD>
+<BODY>
+<?php include(DEDEMEMBER."/templets/login_head@@.htm"); ?>
+<DIV class="left main02"></DIV>
+<DIV class="right content_ri">
+<DIV class=content_ri01>
+<DIV class=login>无忧创意网<font color="red">会员登陆</font></DIV>
+<DIV 
+style="PADDING-BOTTOM: 32px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 32px; _padding: 29px 0" 
+class=content_ri02>
+<DIV class=notice>
+<DIV class=notice02><center>登陆无忧网分享你的精彩创意</center></DIV></DIV>
+    <form name='form1' method='POST' action='index_do.php'>
+      <input type="hidden" name="fmdo" value="login">
+      <input type="hidden" name="dopost" value="login">
+      <input type="hidden" name="gourl" value="<?php if(!empty($gourl)) echo $gourl;?>">
+<UL>
+  <LI class=li02>用户名： </LI>
+  <LI><INPUT class=input maxLength="20" name="userid" required="required" 
+  pattern="\S{2,20}" minlength="2" id="txtUsername"> </LI> 
+  <LI class=li02>密码： </LI>
+  <LI><INPUT class=input type=password required="required" 
+  minlength="4" id="txtPassword" name="pwd"> 
+
+  <LI style="BORDER-BOTTOM-STYLE: none; TEXT-ALIGN: right; BORDER-RIGHT-STYLE: none; MARGIN: 5px 0px; PADDING-LEFT: 0px; WIDTH: 82%; PADDING-RIGHT: 4px; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none">
+  <A title=忘记密码 href="resetpassword.php">忘记密码？</A> 
+  <INPUT value=http://www.ies5.com/ type=hidden name=refer> <INPUT id=submit class=submit value=登&nbsp;&nbsp;录 type=submit name=login_submit> 
+
+  </LI></UL></FORM></DIV>
+<DIV 
+style="PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 15px" 
+class=content_ri03><SPAN>真糗！还没有帐号？</SPAN> <SPAN class=e21b1b><A title=立即注册 
+href="index_do.php?fmdo=user&dopost=regnew"><STRONG>立即注册</STRONG></A></SPAN> 
+
+<DIV class=clear></DIV></DIV>
+<DIV style="BORDER-BOTTOM: #ddd 1px solid; WIDTH: 100%" class=clear></DIV>
+<DIV class=content_ri04>
+<DIV style="float:left;">其他登录方式</DIV>
+<DIV><!--
+<A style="COLOR: #2864b4" title=用户注册 
+href="http://passport.arting365.com/register.php">用户注册</A>&nbsp;&nbsp; <A 
+style="COLOR: #2864b4" title=用户登录 
+href="http://passport.arting365.com/index.php">用户登录</A>&nbsp;&nbsp; <A 
+style="COLOR: #2864b4" title=找回密码 
+href="http://passport.arting365.com/lostpassword.php">找回密码</A> 
+-->
+</DIV></DIV></DIV></DIV></DIV>
+<DIV class=bottom></DIV></DIV></DIV>
+<?php include(DEDEMEMBER."/templets/login_footer@@.htm"); ?>
+</BODY></HTML>

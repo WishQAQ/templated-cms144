@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="hymfx.com" />
+
+<link rel="stylesheet" type="text/css" media="all" href="/skin/style.css">
+<link rel="stylesheet" type="text/css" media="all" href="/skin/front.min.css">
+<!--导航下拉-->
+<!--[if lt IE 9]>
+<script src="/skin/html5.js"></script>
+<script src="/skin/selectivizr-min.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie9.css" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie8.css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="/skin/ie7.css" />
+<![endif]-->
+</head>
+<body style="">
+<div class="wrapper">
+<!-- head开始-->
+{dede:include filename="head.htm"/}
+<!-- head结束-->
+<script type="text/javascript" src="/skin/jquery.js"></script>
+<script type="text/javascript" src="/skin/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="/skin/jquery.carouFredSel-6.2.1.js"></script>
+<script type="text/javascript" src="/skin/tie-scripts.js"></script>
+<div id="main-content" class="container">	
+<div class="content">
+<!-- 幻灯播放开始 -->
+<div id="ei-slider" class="ei-slider"><div class="ei-slider-loading" style="display: none; ">Loading</div>
+<div class="ei-slider-loading" style="display: none; ">Loading</div>
+<ul class="ei-slider-large">
+{dede:arclist flag='f' limit='0,6' titlelen = '60' infolen='250'}
+<li style="z-index: 1; opacity: 0; ">
+<a href="[field:arcurl/]" target="_blank">
+<img src="[field:litpic/]" alt="[field:title/]" style="width: 744.1176470588235px; height: 330px; margin-left: -42.05882352941177px; margin-top: 0px; "></a>
+<div class="ei-title">
+<h2 style="display: block; opacity: 0; "><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h2>
+<h3 style="display: block; opacity: 0; "><a href="[field:arcurl/]" target="_blank">[field:infos/]...</a></h3>
+</div>
+</li>
+{/dede:arclist}
+</ul>
+<!-- 幻灯按钮开始 -->
+<ul class="ei-slider-thumbs" style="display: block; max-width: 120%; ">
+<li class="ei-slider-element" style="max-width: 20%; width: 16.666666666666668%; left: 440px; "></li>
+{dede:arclist flag='f' limit='0,6' titlelen = '60' infolen='250'}
+<li style="max-width: 20%; width: 16.666666666666668%; "><a href="[field:arcurl/]">[field:title/]</a> <img src="[field:litpic/]"></li>
+{/dede:arclist}
+</ul><!-- 幻灯按钮结束 -->
+</div>	<!-- 幻灯播放结束 -->
+<script type="text/javascript">
+jQuery(function() {
+jQuery('#ei-slider').eislideshow({
+animation			: 'center',
+autoplay			: true,
+slideshow_interval	: 3024,
+speed          		: 616,
+titlesFactor		: 0.60,
+titlespeed          : 1000,
+thumbMaxWidth       : 20
+});
+});
+</script><!-- 幻灯效果结束 -->
+<section class="cat-box recent-box">
+<div class="cat-box-title">
+<h2>今日头条</h2>
+<div class="stripe-line"></div>
+</div>
+<div class="cat-box-content">
+{dede:arclist orderby='pubdate' row='6' titlelen='60'}
+<div class="recent-item">		
+<div class="post-thumbnail" style="height:93px;overflow:hidden;">
+<a href="[field:arcurl/]" title="[field:title/]?" target="_blank">				
+<img src="[field:litpic/]" alt="?[field:title/]">
+<span class="overlay-icon"></span>
+</a>
+</div>
+<h3><a href="[field:arcurl/]" title="?[field:title/]" target="_blank">?[field:title/]</a></h3>
+<p class="post-meta">
+[field:pubdate function="MyDate('Y年m月d日',@me)"/] 		查看：	[field:click/] 		</p>
+</div>
+{/dede:arclist}									
+<div class="clear"></div>
+</div>
+</section>
+<div class="clear"></div>
+<!--栏目循环开始-->
+<section class="cat-box wide-box">
+<div class="cat-box-title">
+{dede:type typeid='1'}<h2><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></h2>{/dede:type}<!--当前栏目名称-->
+
+<div class="stripe-line"></div>
+</div>
+<div class="cat-box-content">
+<ul>
+<!-- 当前栏目头条开始 -->
+{dede:arclist typeid='1' orderby='rand' row='1' titlelen='42' infolen='250'}
+<li class="first-news">
+<div class="inner-content">
+<div class="post-thumbnail">
+<a href="[field:arcurl/]" title="[field:title/]" target="_blank">			
+<img src="[field:litpic/]" alt="[field:title/]">
+<span class="overlay-icon"></span>
+</a></div>					
+<h2><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></h2>
+<p class="post-meta">
+[field:pubdate function="MyDate('Y年m月d日',@me)"/] 
+<a href="[field:arcurl/]" title="[field:title/]"></a>		查看：	[field:click/] 			</p>
+<div class="entry">[field:infos/] ...	
+<a class="more-link" href="[field:arcurl/]" target="_blank">阅读更多 ?</a>
+</div>
+</div>
+</li>
+{/dede:arclist}
+<!-- 当前栏目头条结束 -->
+<!-- 当前栏目最新文档开始 -->
+{dede:arclist typeid='1' orderby='pubdate' row='6' titlelen='42'}
+<li>	<div class="post-thumbnail">
+<a href="[field:arcurl/]" title="[field:title/]" target="_blank">
+<img src="[field:litpic/]" alt="[field:title/]" width="90" height="55">
+</a></div>			
+<h3><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></h3>
+<p class="post-meta">
+[field:pubdate function="MyDate('Y年m月d日',@me)"/] 			
+查看：	[field:click/] 
+</p>
+</li>
+{/dede:arclist}
+
+<!-- 当前栏目最新文档结束 -->																	
+</ul>
+<div class="clear"></div>
+</div>
+</section>
+<section class="cat-box wide-box">
+<div class="cat-box-title">
+{dede:type typeid='2'}<h2><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></h2>{/dede:type}<!--当前栏目名称-->
+
+<div class="stripe-line"></div>
+</div>
+<div class="cat-box-content">
+<ul>
+<!-- 当前栏目头条开始 -->
+{dede:arclist typeid='2' orderby='rand' row='1' titlelen='42' infolen='250'}
+<li class="first-news">
+<div class="inner-content">
+<div class="post-thumbnail">
+<a href="[field:arcurl/]" title="[field:title/]" target="_blank">			
+<img src="[field:litpic/]" alt="[field:title/]">
+<span class="overlay-icon"></span>
+</a></div>					
+<h2><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></h2>
+<p class="post-meta">
+[field:pubdate function="MyDate('Y年m月d日',@me)"/] 
+<a href="[field:arcurl/]" title="[field:title/]"></a>		查看：	[field:click/] 			</p>
+<div class="entry">[field:infos/] ...	
+<a class="more-link" href="[field:arcurl/]" target="_blank">阅读更多 ?</a>
+</div>
+</div>
+</li>
+{/dede:arclist}
+<!-- 当前栏目头条结束 -->
+<!-- 当前栏目最新文档开始 -->
+{dede:arclist typeid='2' orderby='pubdate' row='6' titlelen='42'}
+<li>	<div class="post-thumbnail">
+<a href="[field:arcurl/]" title="[field:title/]" target="_blank">
+<img src="[field:litpic/]" alt="[field:title/]" width="90" height="55">
+</a></div>			
+<h3><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></h3>
+<p class="post-meta">
+[field:pubdate function="MyDate('Y年m月d日',@me)"/] 			
+查看：	[field:click/] 
+</p>
+</li>
+{/dede:arclist}
+
+<!-- 当前栏目最新文档结束 -->																	
+</ul>
+<div class="clear"></div>
+</div>
+</section><section class="cat-box wide-box">
+<div class="cat-box-title">
+{dede:type typeid='3'}<h2><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></h2>{/dede:type}<!--当前栏目名称-->
+
+<div class="stripe-line"></div>
+</div>
+<div class="cat-box-content">
+<ul>
+<!-- 当前栏目头条开始 -->
+{dede:arclist typeid='3' orderby='rand' row='1' titlelen='42' infolen='250'}
+<li class="first-news">
+<div class="inner-content">
+<div class="post-thumbnail">
+<a href="[field:arcurl/]" title="[field:title/]" target="_blank">			
+<img src="[field:litpic/]" alt="[field:title/]">
+<span class="overlay-icon"></span>
+</a></div>					
+<h2><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></h2>
+<p class="post-meta">
+[field:pubdate function="MyDate('Y年m月d日',@me)"/] 
+<a href="[field:arcurl/]" title="[field:title/]"></a>		查看：	[field:click/] 			</p>
+<div class="entry">[field:infos/] ...	
+<a class="more-link" href="[field:arcurl/]" target="_blank">阅读更多 ?</a>
+</div>
+</div>
+</li>
+{/dede:arclist}
+<!-- 当前栏目头条结束 -->
+<!-- 当前栏目最新文档开始 -->
+{dede:arclist typeid='3' orderby='pubdate' row='6' titlelen='42'}
+<li>	<div class="post-thumbnail">
+<a href="[field:arcurl/]" title="[field:title/]" target="_blank">
+<img src="[field:litpic/]" alt="[field:title/]" width="90" height="55">
+</a></div>			
+<h3><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></h3>
+<p class="post-meta">
+[field:pubdate function="MyDate('Y年m月d日',@me)"/] 			
+查看：	[field:click/] 
+</p>
+</li>
+{/dede:arclist}
+
+<!-- 当前栏目最新文档结束 -->																	
+</ul>
+<div class="clear"></div>
+</div>
+</section><section class="cat-box wide-box">
+<div class="cat-box-title">
+{dede:type typeid='4'}<h2><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></h2>{/dede:type}<!--当前栏目名称-->
+
+<div class="stripe-line"></div>
+</div>
+<div class="cat-box-content">
+<ul>
+<!-- 当前栏目头条开始 -->
+{dede:arclist typeid='4' orderby='rand' row='1' titlelen='42' infolen='250'}
+<li class="first-news">
+<div class="inner-content">
+<div class="post-thumbnail">
+<a href="[field:arcurl/]" title="[field:title/]" target="_blank">			
+<img src="[field:litpic/]" alt="[field:title/]">
+<span class="overlay-icon"></span>
+</a></div>					
+<h2><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></h2>
+<p class="post-meta">
+[field:pubdate function="MyDate('Y年m月d日',@me)"/] 
+<a href="[field:arcurl/]" title="[field:title/]"></a>		查看：	[field:click/] 			</p>
+<div class="entry">[field:infos/] ...	
+<a class="more-link" href="[field:arcurl/]" target="_blank">阅读更多 ?</a>
+</div>
+</div>
+</li>
+{/dede:arclist}
+<!-- 当前栏目头条结束 -->
+<!-- 当前栏目最新文档开始 -->
+{dede:arclist typeid='4' orderby='pubdate' row='6' titlelen='42'}
+<li>	<div class="post-thumbnail">
+<a href="[field:arcurl/]" title="[field:title/]" target="_blank">
+<img src="[field:litpic/]" alt="[field:title/]" width="90" height="55">
+</a></div>			
+<h3><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></h3>
+<p class="post-meta">
+[field:pubdate function="MyDate('Y年m月d日',@me)"/] 			
+查看：	[field:click/] 
+</p>
+</li>
+{/dede:arclist}
+
+<!-- 当前栏目最新文档结束 -->																
+</ul>
+<div class="clear"></div>
+</div>
+</section><section class="cat-box wide-box">
+<div class="cat-box-title">
+{dede:type typeid='7'}<h2><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></h2>{/dede:type}<!--当前栏目名称-->
+
+<div class="stripe-line"></div>
+</div>
+<div class="cat-box-content">
+<ul>
+<!-- 当前栏目头条开始 -->
+{dede:arclist typeid='7' orderby='rand' row='1' titlelen='42' infolen='250'}
+<li class="first-news">
+<div class="inner-content">
+<div class="post-thumbnail">
+<a href="[field:arcurl/]" title="[field:title/]" target="_blank">			
+<img src="[field:litpic/]" alt="[field:title/]">
+<span class="overlay-icon"></span>
+</a></div>					
+<h2><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></h2>
+<p class="post-meta">
+[field:pubdate function="MyDate('Y年m月d日',@me)"/] 
+<a href="[field:arcurl/]" title="[field:title/]"></a>		查看：	[field:click/] 			</p>
+<div class="entry">[field:infos/] ...	
+<a class="more-link" href="[field:arcurl/]" target="_blank">阅读更多 ?</a>
+</div>
+</div>
+</li>
+{/dede:arclist}
+<!-- 当前栏目头条结束 -->
+<!-- 当前栏目最新文档开始 -->
+{dede:arclist typeid='7' orderby='pubdate' row='6' titlelen='42'}
+<li>	<div class="post-thumbnail">
+<a href="[field:arcurl/]" title="[field:title/]" target="_blank">
+<img src="[field:litpic/]" alt="[field:title/]" width="90" height="55">
+</a></div>			
+<h3><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></h3>
+<p class="post-meta">
+[field:pubdate function="MyDate('Y年m月d日',@me)"/] 			
+查看：	[field:click/] 
+</p>
+</li>
+{/dede:arclist}
+
+<!-- 当前栏目最新文档结束 -->																
+</ul>
+<div class="clear"></div>
+</div>
+</section> 
+<!--栏目循环结束-->
+<!--ad开始-->
+<div class="home-ads">
+<a href="http://www.hymfx.com/" title="模板无忧广告位" target="_blank">
+<img src="/skin/ad01.jpg" alt="模板无忧广告位" width="660" height="90">
+</a>
+</div><!--ad结束-->
+<div class="clear"></div>
+</div>
+<!--边栏开始-->
+{dede:include filename="right.htm"/}
+<!--边栏结束-->
+<div class="clear"></div>
+</div>
+<!--footer开始-->
+{dede:include filename="footer.htm"/}
+<!--footer结束-->	
+</div>
+</body></html>

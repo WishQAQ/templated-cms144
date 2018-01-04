@@ -1,0 +1,57 @@
+{dede:field name='keywords'}TMT行业观点平台,科技媒体,互联{/dede:field}
+{dede:field name='description'}{/dede:field}
+{dede:field name='title'}【案例】P2P企业的难解悖论：隐私权、知情权何以两全？{/dede:field}
+{dede:field name='writer'}{/dede:field}
+{dede:field name='source'}{/dede:field}
+{dede:field name='pubdate'}{/dede:field}
+{dede:field name='body'}<p>
+				<p><a href="http://www.tmtpost.com/111870.html/224745f9dcb4bbd2e157f464bd69596b" rel="attachment wp-att-111898"><img class="aligncenter size-large wp-image-111898" title="P2P平台" src="/uploads/allimg/c140614/1402H2RA40-32408.gif" alt="P2P平台" width="560" height="391" /></a></p>
+<p>隐私权和知情权原本不应该是一对敌体，却在<span class='wp_keywordlink_affiliate'><a href="http://www.tmtpost.com/tag/p2p" title="查看 P2P 中的全部文章" target="_blank">P2P</a></span>这一新兴行业“结仇”，到底是何缘故呢？</p>
+<p><strong>隐私权大过知情权 ，“</strong><strong>爱投资”有失公允</strong></p>
+<p>昨天，一位名为“哲学家之石”的网贷用户在网贷天眼论坛发表题为“对爱投资的了解，结果让我心寒，做下风险预警”的帖子，公开了一段与P2P平台“爱投资”客服的对话记录。该用户因为“爱投资”借款合同中借款人信息不全而对投资安全产生疑虑，并因近期发生的“科迅网”跑路事件而产生更强烈的担忧，要求到爱投资公司实地考察并查验抵押合同及借款人资料，但爱投资以“保护借款人隐私”为由拒绝了他的请求。</p>
+<p>这一帖子引发了网友热议。一部分网友认为爱投资保护借款人隐私，值得称赞；一部分网友则认为爱投资的网上信息披露不够完整可以理解，但不允许现场查验抵押合同和借款人资料，就有些可疑甚至过分了。</p>
+<p><strong>“哲学家之石”在跟帖中提出两个问题，可谓是直指根本：1.如果平台跑路，借款公司跑路，我该起诉谁（被告都没有法院也不会立案）？2.债权人是否有权知道债务人身份证号，这种权利不受债务人与中介方的内部协议的抵抗(我猜他要说的可能是“对抗”)？</strong></p>
+<p>随后，爱投资官方账号回复：1.起诉担保公司。借款公司跑路了但是他的主体没有灭失，如果涉嫌诈骗可以报警，如果属于民事债权债务纠纷可以向法院起诉。2.债务人的所有信息平台都留存备案，一旦发生违约行为，平台会协助债权人追偿并向债权人提供债务人的所有信息。但是在债务人未违约的前提下，平台基于对债务人隐私以及商业机密的保护，不得向公众公示债务人隐私信息。</p>
+<p><img src="http://www.tmtpost.com/https:/mmbiz.qlogo.cn/mmbiz/uFBQbQmrPyN1ibc5XqFiaLa3xrI4dmCQaf0qC9NFOKJAyYSYiaZ5eW73RFdHOgXNQx1YdQ8yTPC64ibhEY0UPXkBpg/0" alt="" /></p>
+<p>也许是认识到了上述回复太过“不痛不痒”，爱投资官方账号又进行了第二次回复：经过大家仔细讨论研究，既要照顾到投资者对项目具体信息的知情权，又要兼顾和企业一方签署的协议，我们提供给投资者几种解决方式和思路：</p>
+<p>1.如果投资者认为网上合同是PS的话，CFCA认证一旦盖章确认，即可做到防篡改，健全，即可以规避您提出的质疑。</p>
+<p>2.如果投资者对项目真实性提出质疑，除了通过我们，还可以电话咨询该融资性担保公司，担保公司信息披露完整，且会和您确认是否和爱投资有相关项目合作。</p>
+<p>3.如果投资者认为担保公司和我们联合造假的话，可以看担保公司合作银行的多少和他的银保业务量，银行信用背书跑路成本挺高的。</p>
+<p>4.热烈欢迎投资者各种质疑，我们是最愿意和投资者沟通的一群愤青。</p>
+<p><img src="http://www.tmtpost.com/https:/mmbiz.qlogo.cn/mmbiz/uFBQbQmrPyN1ibc5XqFiaLa3xrI4dmCQaf18Q3IicKdTjaa14ibsp8FcdWbSp4jWdnIy0SwgldYv4ic5RbcnUx7X8icg/0" alt="" /></p>
+<p><strong><br />
+</strong></p>
+<p><strong>绕不开的悖论，</strong><strong>解不开的心结</strong></p>
+<p><strong>不得不说，爱投资的两次回复都没有触及问题的本质。爱投资啰哩啰嗦一大堆，似乎只是在强调一件事，请相信我们——以及我们的合作伙伴们。而问题的本质在于，如果合同不成立，信不信任又有啥关系？我要的是知情权，要的不是信任感！</strong></p>
+<p>在爱投资的借款合同（借款人、投资人、担保人、撮合人四方合同）中，借款人的信息并不完整，更何况没有足够的证据表明借款人进行过“真实意思表示”，这会不会影响合同的效力？而担保合同、撮合服务合同都是从属于借贷合同的，如果借贷合同不成立，担保合同和撮合服务合同的效力是很难被认定的。</p>
+<p>&nbsp;</p>
+<p><img src="http://www.tmtpost.com/https:/mmbiz.qlogo.cn/mmbiz/uFBQbQmrPyN1ibc5XqFiaLa3xrI4dmCQafMmCj6b69IJ6ky9OvuYic0icia0ZYhcbr01bPmv4fu59h3lAWKfDZ36zIQ/0" alt="" /></p>
+<p><img src="http://www.tmtpost.com/https:/mmbiz.qlogo.cn/mmbiz/uFBQbQmrPyN1ibc5XqFiaLa3xrI4dmCQafXeEtxaPTJxBKV3kVotp6icKVRHRFPFia7mz5GobksuQXM3YRQ4CDJYibA/0" alt="" /></p>
+<p><img src="http://www.tmtpost.com/https:/mmbiz.qlogo.cn/mmbiz/uFBQbQmrPyN1ibc5XqFiaLa3xrI4dmCQafgr0Gq5s0na4B80b8dOiaKCK3nkRviaIU0DcAZKkIuVFEURn4gs824wmA/0" alt="" /></p>
+<p><img src="http://www.tmtpost.com/https:/mmbiz.qlogo.cn/mmbiz/uFBQbQmrPyN1ibc5XqFiaLa3xrI4dmCQaf22zl23W2zRsX93QE5P19XDyOicsDJvITCG6ten6QibMia3XPHHvZ90AMA/0" alt="" /></p>
+<p>即便爱投资通过种种第三方机构，包括有一定社会公信力的“CFCA”来力证合同有效，却也绕不开投资人的知情权问题。P2P意为点对点直接借贷，如果投资人连把钱借给了谁都不知道，又谈何P2P？平台企业有如何敢声称”为投资者服务”？监管部门又谈何<span class='wp_keywordlink_affiliate'><a href="http://www.tmtpost.com/tag/%e9%87%91%e8%9e%8d" title="查看 金融 中的全部文章" target="_blank">金融</a></span>消费者权益保护？</p>
+<p>但与知情权相对的是隐私权。以我有限的<span class='wp_keywordlink_affiliate'><a href="http://www.tmtpost.com/tag/%e6%b3%95%e5%be%8b" title="查看 法律 中的全部文章" target="_blank">法律</a></span>常识来看，隐私权是人身权利，是一种绝对权力，法律地位要高于属于财产权利范畴的消费知情权。也就是说，如果知情权遇上了隐私权，是需要给隐私权让路的。但值得一提的是，企业的“隐私权”（商业秘密）和个人的“隐私权”并不是一回事，与“消费知情权”之间的博弈尚未尘埃落定。</p>
+<p><strong>一条悖论就此横亘在P2P企业的面前：一方面是借款人的隐私权，一方面是投资人（出借人）的知情权，都是不容侵犯的正当权利（权益），实在难以权衡。两者狭路相逢时，也许只有强者和勇者胜了——但在我们的立法和司法实践中，法律又总是同情弱者的。</strong></p>
+<p>这一悖论一日未解，从业者的纠结就“绵绵无绝期”了。</p>
+<p>&nbsp;</p>
+<p><strong>爱投资并非孤例，</strong><strong>向行业惯例妥协</strong></p>
+<p>通过调查了解和亲身体验，我发现，隐匿借款人身份信息（企业名称）的做法在业内几乎已成惯例。多数平台在信息披露过程中都采取了“遮蔽”手段对借款人关键信息进行处理，其目的大概也是尽可能保障借款人的“隐私”。</p>
+<p>不久前曾与重庆某P2P平台老板聊天，说到了信息披露。这位老板表示很无奈，他比较倾向于保障投资人的知情权，但行业现状如此，孤军奋战非但不能成势，反而有可能被借款人集体抵制。</p>
+<p><strong>向银行贷款还好，大家都认为银行的门槛高，能借到钱反而证明信用高，而民间借贷则相反，发生借贷就证明出现了资金短缺，所以借款人大多不愿意让外人——特别是合作伙伴知道他出现了资金短缺，这会影响他的商誉。</strong>“你想啊，我这里非得要求他披露更多信息，但其他平台不强制要求啊，你说他会找谁啊？”</p>
+<p>向行业惯例妥协低头的，并不仅仅是P2P平台老板们，也有不少投资人逐渐接受了这一现实。有几位“爱投资”平台的投资者表示，所有平台都这样了，换个平台也未必能做得更好。</p>
+<p>&nbsp;</p>
+<p><img class="aligncenter" src="http://www.tmtpost.com/https:/mmbiz.qlogo.cn/mmbiz/uFBQbQmrPyN1ibc5XqFiaLa3xrI4dmCQafxo6oQ2p7B7F2FibwtUbqYxAPp4sMgODhsMxLRWa1r6M85Hv6FGaHkVQ/0" alt="" /></p>
+<p><img class="aligncenter" src="http://www.tmtpost.com/https:/mmbiz.qlogo.cn/mmbiz/uFBQbQmrPyN1ibc5XqFiaLa3xrI4dmCQafW1FkU6ib1DCcdR3Gryl1wicdpuFjNH5IrRh6yDxOjJOiaNmS0ib2mCw6oA/0" alt="" /><img class="aligncenter" src="http://www.tmtpost.com/https:/mmbiz.qlogo.cn/mmbiz/uFBQbQmrPyN1ibc5XqFiaLa3xrI4dmCQafY876Irj1qThKibNq2Pz2lRMu0Es8MIP3MYRWK2bX05F5O7B6hEO3hGg/0" alt="" /></p>
+<p><img class="aligncenter" src="http://www.tmtpost.com/https:/mmbiz.qlogo.cn/mmbiz/uFBQbQmrPyN1ibc5XqFiaLa3xrI4dmCQafibMYrXXoG97hnDtyMmhbWJmqibd8mbgVTxpckMiceBwasMMQzH5g14Tww/0" alt="" /></p>
+<p><img class="aligncenter" src="http://www.tmtpost.com/https:/mmbiz.qlogo.cn/mmbiz/uFBQbQmrPyN1ibc5XqFiaLa3xrI4dmCQafXoK0kwVXxQqXNU3hOm1G3ybhOHTsxl6KzJaiaQhY9YOw6Yr4rsPtfjA/0" alt="" /></p>
+<p>通过回顾P2P行业发展过程中的种种恶行劣迹，我认为这种行业现状非常值得担忧：借款人信息披露不完整，会给骗子平台留下了太多的造假机会，因为“保护隐私”，投资人很难核实。另外，在行业信息共享平台建成之前，借款人信息披露不完整有可能给借款人多平台重复借贷留下空间。</p>
+<p>&nbsp;</p>
+<p><strong>更何况，向合作伙伴隐瞒“资金短缺”的现实是一种谈不上多光彩的行为，与隐私权无关！</strong></p>
+<p><strong>前述重庆某P2P平台老板认为，建议由权威部门制定行业规范，对信息披露的详实程度进行界定，才能切实保障投资人的合法权益。而在行业规范正式出台之前，他们也在进行一些有利的尝试：对企业进行信息披露的正向激励，同意披露完整信息的，可以获得更高的信用评分，获得投资人的关注，甚至还会给予利率的优惠（风险定价），从而推进平台的透明化。</strong></p>
+<p>&nbsp;</p>
+<p><strong>鸣谢：</strong>在撰写本文的过程中，大成律师事务所的肖飒律师、泰和泰律师事务所的张春花律师、华东政法大学的李碧珍同学提供了支持。</p>
+<p>［网贷简报（微信ID：wangdaijianbao），由WebFinance.CN联合创始人肖世海运营，江湖人称“耗子哥”！］</p>
+			
+				<p></><span>（关注更多<a href="http://www.tmtpost.com/">钛媒体</a>作者观点，参与钛媒体微信互动（微信搜索“钛媒体”或“taimeiti”））</span></p>
+			</p>{/dede:field}
+{dede:field name='litpic'}/uploads/allimg/c140614/1402H2RA40-32408_lit.gif{/dede:field}
